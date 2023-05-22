@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="/src/frameworks/node_modules/bulma/css/bulma.css">
     <link rel="icon" type="image/jpg" href="/src/images/Untitled.png">
     <link rel="stylesheet" href="/src/pages/login/login.css">
+    <link rel="stylesheet" href="/src/frameworks/fontawesome/css/all.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-    <nav class="navbar " role="navigation" aria-label="main navigation">
+    
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <!--Logo / Brand-->
         <div class="navbar-brand">
             <a class="navbar-item" href="/src/pages/main/index.html">
@@ -135,6 +137,44 @@
             </div>
         </div>
     </nav>
+    <section class="hero is-fullheight">
+        <div class="hero-body has-text-centered">
+          <div class="login">
+            <figure class=" image is-128x128">
+                <img src="/src/images/telecall-topo.png" class="telecall-topo" alt="">
+            </figure>
+            <form>
+              <div class="field">
+                <div class="control">
+                  <input class="input is-medium is-rounded" type="email" placeholder="Digite aqui seu CPF" autocomplete="username" required />
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <input class="input is-medium is-rounded" type="password" placeholder="**********" autocomplete="current-password" required />
+                </div>
+              </div>
+              <br />
+              <button class="button is-block is-fullwidth is-primary is-medium is-rounded" type="submit">
+                Acessar
+              </button>
+            </form>
+            <br>
+            <nav class="level">
+              <div class="level-item has-text-centered">
+                <div>
+                  <a href="#">Esqueci minha senha</a>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <a href="#">Cadastre-se</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </section>
     <script src="/src/js/script.js"></script>
 </body>
 
