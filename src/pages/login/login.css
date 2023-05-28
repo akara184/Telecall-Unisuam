@@ -1,41 +1,49 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
- }
- body {
-    background-image: url("/src/images/otherbg2.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.navbar{
-    background-color: rgba(255, 255, 255, 0.1);
+body {
+  background-image: url("/src/images/whiteandred.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}  
+
+.navbar-item img {
+  max-height: 2.75rem;
 }
 
-.navbar-item img{
-    max-height: 2.75rem;
+#buttonlogin {
+  background-color: rgb(216, 22, 38);
+  color: whitesmoke;
 }
-#buttonlogin{
+#loginIcon {
+  padding-right: 8px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1250px) {
+  #responsiveButton {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+  }
+}
+#navbarMain{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+/*COMEÇO DA MINHA FORM*/
+
+
+#entrarcor{
     background-color: rgb(216, 22, 38);
     color: whitesmoke;
-
-}
-#loginIcon{
-    padding-right: 5px;
 }
 
-@media screen and (max-width: 1250px) {
-    #responsiveButton{
-        position: absolute;
-        top: auto;
-        right: 0;
-        bottom: 0;
-        transform: translateY(100%);
 
-    }
-}
-.field{
-    width: 500px;
+#pcop{
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 15px;
+    padding-bottom: 10px;
 }
