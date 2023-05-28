@@ -43,6 +43,13 @@ body {
 
 
 /*COMEÇO DA MINHA FORM*/
+.corVermelho{
+  color: rgb(216, 22, 38) ;
+}
+
+#pCinza{
+  color:#7c7979;
+}
 
 
 #entrarcor{
