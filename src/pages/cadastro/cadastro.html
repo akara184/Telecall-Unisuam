@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="has-navbar-fixed-top">
 
 <head>
     <meta charset="UTF-8">
@@ -109,7 +109,7 @@
                             Número Máscara
                         </a>
                         <a class="navbar-item">
-                            Google Verified Calls
+                            Google Verified Calls   
                         </a>
                         <a class="navbar-item">
                             SMS Programável
@@ -137,25 +137,173 @@
         </div>
     </nav>
     <!--FINAL DA MINHA NAV-->
-    <section class="hero is-fullheight" id="divdocadastro">
-        <div class="hero-body is-justify-content-left is-align-items-center">
-            <div class="columns is-flex is-flex-direction-column ">
-                <div class="column">
-                    <label for="nome">Nome</label>
-                    <input class="input is-danger" type="text" placeholder="Digite seu nome">
-                </div>
-                <div class="column">
-                    <label for="senha">Senha</label>
-                    <input class="input is-danger" type="password" placeholder="Digite aqui sua senha">
- 
-                </div>
-                <div class="column">
-                    <button class="button is-fullwidth" id="entrarcor" type="submit">Cadastre-se</button>
-                </div>
 
+    <!--INICIO DO MEU CADASTRO-->
+
+    
+    <section class="hero is-fullheight">
+        <div class="hero-body is-justify-content-center">
+            <div class="columns is-flex is-flex-direction-column box">
+                <p class="title is-1">Crie sua conta na <span class="corVermelho">Telecall</span></p>
+                <p class="subtitle is-5" id="pCinza">Explore um novo mundo de comunicação e colaboração.</p>
+                
+                <div class="field">
+                    <label class="label">Nome:</label>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="text" placeholder="Digite seu nome completo">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Data de Nascimento:</label>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="date">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-calendar"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Sexo:</label>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control">
+                                <div class="select">
+                                    <select>
+                                        <option>Selecione</option>
+                                        <option>Masculino</option>
+                                        <option>Feminino</option>
+                                        <option>Outro</option>
+                                    </select>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Nome Materno:</label>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="text" placeholder="Digite seu nome materno">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label">CPF:</label>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="text" placeholder="Digite seu CPF">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-id-card"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Telefone Celular:</label>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="tel" placeholder="Digite seu telefone celular">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Telefone Fixo:</label>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="tel" placeholder="Digite seu telefone fixo">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-phone"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Endereço Completo:</label>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="text" placeholder="Digite seu endereço completo">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Senha:</label>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="password" placeholder="Digite sua senha">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Confirme a Senha:</label>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="password" placeholder="Confirme sua senha">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="column">
+                        <button class="button is-fullwidth is-medium" id="idcadastro" type="submit">Cadastre-se</button>
+                    </div>
+                </div>
             </div>
+            </div>
+            
         </div>
+
     </section>
+    
+    
+    
 
 
 

@@ -9,6 +9,7 @@ body {
   background-attachment: fixed;
 }  
 
+
 .navbar-item img {
   max-height: 2.75rem;
 }
@@ -36,10 +37,28 @@ body {
   }
 }
 
-
 #navbarMain{
     box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1)
 }
 /*COMEÇO DA MINHA FORM*/
 
+.corVermelho{
+  color: rgb(216, 22, 38) ;
+}
 
+#pCinza{
+  color:#7c7979;
+}
+
+.columns:last-child {
+  margin-bottom: 20rem;
+}
+#idcadastro{
+  background-color: rgb(216, 22, 38);
+  color: whitesmoke;
+}
+
+.hero.is-halfheight .hero-body, .hero.is-fullheight .hero-body, .hero.is-fullheight-with-navbar .hero-body{
+  margin-top: 19em;
+  height: 50em;
+}
