@@ -8,5 +8,10 @@ burgerIcon.addEventListener('click', () => {
     burgerIcon.classList.toggle("is-active");
 
 });
+$(document).ready(function(){
+    $("#cpf").mask("000.000.000-00");
+   
+})
+
 
 

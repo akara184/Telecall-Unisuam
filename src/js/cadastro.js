@@ -13,4 +13,9 @@ burgerIcon.addEventListener('click', () => {
         heroSection.style.display = 'flex';
     }
 });
+$(document).ready(function(){
+    $("#cpf").mask("000.000.000-00");
+    $("#tell1").mask("(+55) 00-000000000");
+    $("#tell2").mask("(+55) 00-000000000");
+})
 

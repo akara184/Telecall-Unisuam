@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/src/pages/cadastro/cadastro.css">
     <link rel="stylesheet" href="/src/frameworks/fontawesome/css/all.css">
     <script src="/src/js/jquery-3.7.0.js.js"></script>
+    <script src="/src/js/jquery.mask.min.js"></script>
 
 </head>
 
@@ -156,7 +157,20 @@
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-user"></i>
                                 </span>
+                                <p class="help is-link">O campo nome deve ter no mínimo 15 caracteres e no máximo 60 caracteres alfabéticos</p>                            
                             </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Nome Materno:</label>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="text" placeholder="Digite seu nome completo">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
                         </div>
                     </div>
                 </div>
@@ -194,25 +208,11 @@
                 </div>
                 
                 <div class="field">
-                    <label class="label">Nome Materno:</label>
-                    <div class="field-body">
-                        <div class="field">
-                            <p class="control has-icons-left">
-                                <input class="input" type="text" placeholder="Digite seu nome materno">
-                                <span class="icon is-small is-left">
-                                    <i class="fas fa-user"></i>
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="field">
                     <label class="label">CPF:</label>
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" type="text" placeholder="Digite seu CPF">
+                                <input class="input" id="cpf" type="text" placeholder="Digite seu CPF">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-id-card"></i>
                                 </span>
@@ -226,7 +226,7 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" type="tel" placeholder="Digite seu telefone celular">
+                                <input class="input" id="tell1" type="tel" placeholder="Digite seu telefone celular">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-mobile-alt"></i>
                                 </span>
@@ -240,7 +240,7 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" type="tel" placeholder="Digite seu telefone fixo">
+                                <input class="input" id="tell2" type="tel" placeholder="Digite seu telefone fixo">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-phone"></i>
                                 </span>
@@ -262,6 +262,23 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="field">
+                    <label class="label">Login:</label>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="text" placeholder="Digite seu login">
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-user-lock"></i>                                
+                                </span>
+                                <p class="help is-link">O campo Login deve ter exatamente 6 caracteres alfabéticos.</p>                            
+
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="field">
                     <label class="label">Senha:</label>
@@ -272,6 +289,7 @@
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-lock"></i>
                                 </span>
+                                <p class="help is-link">O campo Senha deve ter 8 caracteres alfabéticos.</p>
                             </p>
                         </div>
                     </div>
@@ -286,13 +304,15 @@
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-lock"></i>
                                 </span>
+                                <p class="help is-link">O campo Senha deve ter 8 caracteres alfabéticos, idêntico ao primeiro.</p>
+
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="field is-grouped">
                     <div class="column">
-                        <button class="button is-fullwidth is-medium" id="idcadastro" type="submit">Cadastre-se</button>
+                        <button class="button is-fullwidth is-medium" id="idcadastro" type="submit" value="Submit input">Cadastre-se</button>
                     </div>
                 </div>
             </div>
@@ -301,8 +321,6 @@
         </div>
 
     </section>
-    
-    
     
 
 
