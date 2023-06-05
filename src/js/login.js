@@ -40,4 +40,10 @@ $("#entrarcor").click(function(){
         return;
 
     }
+
+    localStorage.setItem("login", login);
+    localStorage.setItem("senha", senha);
+  
+    window.location = "/src/pages/main/index.html";
 })
+
