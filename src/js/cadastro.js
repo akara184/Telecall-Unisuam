@@ -1,19 +1,3 @@
-//mobile menu
-const burgerIcon = document.querySelector(".navbar-burger");
-const navbarMenu = document.querySelector(".navbar-menu");
-const heroSection = document.querySelector(".hero");
-
-burgerIcon.addEventListener("click", () => {
-  navbarMenu.classList.toggle("is-active");
-  burgerIcon.classList.toggle("is-active");
-
-  if (navbarMenu.classList.contains("is-active")) {
-    heroSection.style.display = "none";
-  } else {
-    heroSection.style.display = "flex";
-  }
-});
-
 //VALIDAÇÃO DO MEU CADASTRO
 $(document).ready(function () {
   $("#cpf").mask("000.000.000-00");
@@ -37,7 +21,7 @@ $("#idcadastro").click(function () {
   if (nome.length < 15 || nome.length > 60 || !nome.match(/^[a-zA-Z\s]+$/)) {
     $("#nome").focus();
     bulmaToast.toast({
-      message: "NOME INVÁLIDO",
+      message: "O nome deve ter entre 15 e 60 caracteres e conter apenas letras",
       type: "is-link",
       position: "center",
       pauseOnHover: true,
@@ -49,7 +33,7 @@ $("#idcadastro").click(function () {
   } else if (nomeMaterno == "") {
     $("#nomeMaterno").focus();
     bulmaToast.toast({
-      message: "NOME MATERNO INVÁLIDO",
+      message: "O Nome Materno é obrigatório",
       type: "is-link",
       position: "center",
       pauseOnHover: true,
@@ -61,7 +45,7 @@ $("#idcadastro").click(function () {
   } else if (data == "") {
     $("#data").focus();
     bulmaToast.toast({
-      message: "INSIRA UMA DATA DE NASCIMENTO",
+      message: "Insira uma data",
       type: "is-link",
       position: "center",
       pauseOnHover: true,
@@ -73,7 +57,7 @@ $("#idcadastro").click(function () {
     return;
   } else if (sexo == "Selecione") {
     bulmaToast.toast({
-      message: "SELECIONE O SEU SEXO",
+      message: "Selecione um sexo",
       type: "is-link",
       position: "center",
       pauseOnHover: true,
@@ -85,7 +69,7 @@ $("#idcadastro").click(function () {
     return;
   } else if (cpf.length < 14) {
     bulmaToast.toast({
-      message: "INSIRA UM CPF. EX:000.000.000-00",
+      message: "Insira um CPF no formato: EX:000.000.000-00",
       type: "is-link",
       position: "center",
       pauseOnHover: true,
@@ -97,7 +81,7 @@ $("#idcadastro").click(function () {
     return;
   } else if (!tell1.match(/^\(\+55\)\d{2}-\d{9}$/)) {
     bulmaToast.toast({
-      message: "INSIRA TELEFONE CELULAR. EX: (+55)XX-XXXXXXXXX",
+      message: "Insira um telefone celular no formato: EX: (+55)XX-XXXXXXXXX",
       type: "is-link",
       position: "center",
       pauseOnHover: true,
@@ -109,7 +93,7 @@ $("#idcadastro").click(function () {
     return;
   } else if (!tell2.match(/^\(\+55\)\d{2}-\d{9}$/)) {
     bulmaToast.toast({
-      message: "INSIRA TELEFONE FIXO. EX: (+55)XX-XXXXXXXXX",
+      message: "Insira um telefone fixo no foromato: EX: (+55)XX-XXXXXXXXX",
       type: "is-link",
       position: "center",
       pauseOnHover: true,
@@ -121,7 +105,7 @@ $("#idcadastro").click(function () {
     return;
   } else if (endereco == "") {
     bulmaToast.toast({
-      message: "INSIRA TELEFONE ENDEREÇO",
+      message: "O endereço é obrigatório",
       type: "is-link",
       position: "center",
       pauseOnHover: true,
@@ -133,7 +117,7 @@ $("#idcadastro").click(function () {
     return;
   } else if (!login.match(/^[a-zA-Z]{6}$/)) {
     bulmaToast.toast({
-      message: "INSIRA UM LOGIN NO FORMATO CORRETO",
+      message: "O campo Login deve ter exatamente 6 caracteres alfabéticos.",
       type: "is-link",
       position: "center",
       pauseOnHover: true,
@@ -145,7 +129,7 @@ $("#idcadastro").click(function () {
     return;
   } else if (!senha1.match(/^[a-zA-Z]{8}$/)) {
     bulmaToast.toast({
-      message: "INSIRA UMA SENHA NO FORMATO CORRETO",
+      message: "O campo Senha deve ter 8 caracteres alfabéticos",
       type: "is-link",
       position: "center",
       pauseOnHover: true,
@@ -157,7 +141,7 @@ $("#idcadastro").click(function () {
     return;
   } else if (!senha2.match(/^[a-zA-Z]{8}$/)) {
     bulmaToast.toast({
-      message: "CONFIRME A SENHA NO FORMATO CORRETO",
+      message: "O campo Senha deve ter 8 caracteres alfabéticos.",
       type: "is-link",
       position: "center",
       pauseOnHover: true,
@@ -169,7 +153,7 @@ $("#idcadastro").click(function () {
     return;
   } else if (senha1 !== senha2) {
     bulmaToast.toast({
-      message: "AS SENHAS NÃO CONFEREM",
+      message: "As senhas não conferem",
       type: "is-link",
       position: "center",
       pauseOnHover: true,
@@ -189,10 +173,10 @@ $("#idcadastro").click(function () {
       opacity: 1,
     });
     
+    //LOCAL STORAGE
     localStorage.setItem("login", login);
     localStorage.setItem("senha", senha1);
     
     window.location.href = "/src/pages/login/login.html";
   }
 });
-//LOCAL STORAGE

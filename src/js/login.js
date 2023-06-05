@@ -1,15 +1,3 @@
-//mobile menu
-
-const burgerIcon = document.querySelector(".navbar-burger");
-const navbarMenu = document.querySelector(".navbar-menu");
-
-burgerIcon.addEventListener('click', () => {
-    navbarMenu.classList.toggle("is-active");
-    burgerIcon.classList.toggle("is-active");
-
-});
-
-
 $("#entrarcor").click(function(){
     var login = $("#login").val();
     var senha = $("#senha").val();
@@ -40,7 +28,7 @@ $("#entrarcor").click(function(){
         return;
 
     }
-
+//LOCAL STORAGE
     localStorage.setItem("login", login);
     localStorage.setItem("senha", senha);
   
