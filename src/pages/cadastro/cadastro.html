@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/src/frameworks/fontawesome/css/all.css">
     <script src="/src/js/jquery-3.7.0.js.js"></script>
     <script src="/src/js/jquery.mask.min.js"></script>
+    <script src="/src/frameworks/node_modules/bulma/bulma-toast/dist/bulma-toast.min.js"></script>
 
 </head>
 
@@ -153,7 +154,7 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="nome" type="text" placeholder="Digite seu nome completo">
+                                <input class="input" id="nome" type="text" placeholder="Digite seu nome completo" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-user"></i>
                                 </span>
@@ -167,7 +168,7 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="nomeMaterno" type="text" placeholder="Digite seu nome completo">
+                                <input class="input" id="nomeMaterno" type="text" placeholder="Digite seu nome completo" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-user"></i>
                                 </span>
@@ -180,7 +181,7 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="data" type="date">
+                                <input class="input" id="data" type="date" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-calendar"></i>
                                 </span>
@@ -212,10 +213,11 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="cpf" type="text" placeholder="Digite seu CPF">
+                                <input class="input" id="cpf" type="text" placeholder="Digite seu CPF" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-id-card"></i>
                                 </span>
+                                <p class="help is-link">EX: 000.000.000-00</p>
                             </p>
                         </div>
                     </div>
@@ -226,10 +228,11 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="tell1" type="tel" placeholder="Digite seu telefone celular">
+                                <input class="input" id="tell1" type="tel" placeholder="Digite seu telefone celular" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-mobile-alt"></i>
                                 </span>
+                                <p class="help is-link">EX:(+55)DD-000000000</p>
                             </p>
                         </div>
                     </div>
@@ -240,10 +243,12 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="tell2" type="tel" placeholder="Digite seu telefone fixo">
+                                <input class="input" id="tell2" type="tel" placeholder="Digite seu telefone fixo" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-phone"></i>
                                 </span>
+                                <p class="help is-link">EX:(+55)DD-000000000</p>
+
                             </p>
                         </div>
                     </div>
@@ -254,7 +259,7 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="endereco" type="text" placeholder="Digite seu endereço completo">
+                                <input class="input" id="endereco" type="text" placeholder="Digite seu endereço completo" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </span>
@@ -268,7 +273,7 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="login" type="text" placeholder="Digite seu login">
+                                <input class="input" id="login" type="text" placeholder="Digite seu login" required>
                                 <span class="icon is-small is-left">
                                     <i class="fa-solid fa-user-lock"></i>                                
                                 </span>
@@ -285,7 +290,7 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="senha1" type="password" placeholder="Digite sua senha">
+                                <input class="input" id="senha1" type="password" placeholder="Digite sua senha" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-lock"></i>
                                 </span>
@@ -300,12 +305,11 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input"  id="senha2" type="password" placeholder="Confirme sua senha">
+                                <input class="input"  id="senha2" type="password" placeholder="Confirme sua senha" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-lock"></i>
                                 </span>
                                 <p class="help is-link">O campo Senha deve ter 8 caracteres alfabéticos, idêntico ao primeiro.</p>
-
                             </p>
                         </div>
                     </div>

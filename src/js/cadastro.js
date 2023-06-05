@@ -35,63 +35,158 @@ $("#idcadastro").click(function(){
 
 
     if (nome.length < 15 || nome.length > 60 || !nome.match(/^[a-zA-Z\s]+$/)) {
-        alert("Nome");
         $("#nome").focus();
+        bulmaToast.toast({ 
+        message: 'NOME INVÁLIDO', 
+        type: 'is-link', 
+        position: 'center', 
+        pauseOnHover: true,
+        dismissible: true,
+        closeOnClick: true,
+        opacity: 1, })
         return;
       } 
     else if (nomeMaterno == ""){
-        alert("nome materno");
         $("#nomeMaterno").focus();
+        bulmaToast.toast({ 
+            message: 'NOME MATERNO INVÁLIDO', 
+            type: 'is-link', 
+            position: 'center', 
+            pauseOnHover: true,
+            dismissible: true,
+            closeOnClick: true,
+            opacity: 1, })
         return;
     }
     else if (data == ""){
-        alert("data");
         $("#data").focus();
+        bulmaToast.toast({ 
+            message: 'INSIRA UMA DATA DE NASCIMENTO', 
+            type: 'is-link', 
+            position: 'center', 
+            pauseOnHover: true,
+            dismissible: true,
+            closeOnClick: true,
+            opacity: 1, })
 
         return;
     }
     else if (sexo == "Selecione"){
-        alert("selecione o sexo");
+        bulmaToast.toast({ 
+            message: 'SELECIONE O SEU SEXO', 
+            type: 'is-link', 
+            position: 'center', 
+            pauseOnHover: true,
+            dismissible: true,
+            closeOnClick: true,
+            opacity: 1, })
         $("#sexo").focus();
         return;
     }
     else if (cpf.length < 14){
-        alert("cpf");
+        bulmaToast.toast({ 
+            message: 'INSIRA UM CPF. EX:000.000.000-00', 
+            type: 'is-link', 
+            position: 'center', 
+            pauseOnHover: true,
+            dismissible: true,
+            closeOnClick: true,
+            opacity: 1, })
         $("#cpf").focus();
         return;
     }
     else if (!tell1.match(/^\(\+55\)\d{2}-\d{9}$/)){
-        alert("telefone celular");
+        bulmaToast.toast({ 
+            message: 'INSIRA TELEFONE CELULAR. EX: (+55)XX-XXXXXXXXX', 
+            type: 'is-link', 
+            position: 'center', 
+            pauseOnHover: true,
+            dismissible: true,
+            closeOnClick: true,
+            opacity: 1, })
         $("#tell1").focus();
         return;
     }
     else if (!tell2.match(/^\(\+55\)\d{2}-\d{9}$/)){
-        alert("telefone fixo");
+        bulmaToast.toast({ 
+            message: 'INSIRA TELEFONE FIXO. EX: (+55)XX-XXXXXXXXX', 
+            type: 'is-link', 
+            position: 'center', 
+            pauseOnHover: true,
+            dismissible: true,
+            closeOnClick: true,
+            opacity: 1, })
         $("#tell2").focus();
         return;
     }
     else if (endereco == ""){
-        alert("endereco");
+        bulmaToast.toast({ 
+            message: 'INSIRA TELEFONE ENDEREÇO', 
+            type: 'is-link', 
+            position: 'center', 
+            pauseOnHover: true,
+            dismissible: true,
+            closeOnClick: true,
+            opacity: 1, })
         $("#endereco").focus();
         return;
     }
     else if (!login.match(/^[a-zA-Z]{6}$/)){
-        alert("login");
+        bulmaToast.toast({ 
+            message: 'INSIRA UM LOGIN NO FORMATO CORRETO', 
+            type: 'is-link', 
+            position: 'center', 
+            pauseOnHover: true,
+            dismissible: true,
+            closeOnClick: true,
+            opacity: 1, })
         $("#login").focus();
         return;
     }
     else if (!senha1.match(/^[a-zA-Z]{8}$/)){
-        alert("senha1");
+        bulmaToast.toast({ 
+            message: 'INSIRA UMA SENHA NO FORMATO CORRETO', 
+            type: 'is-link', 
+            position: 'center', 
+            pauseOnHover: true,
+            dismissible: true,
+            closeOnClick: true,
+            opacity: 1, })
         $("#senha1").focus();
         return;
     }
     else if (!senha2.match(/^[a-zA-Z]{8}$/)){
-        alert("senha2");
+        bulmaToast.toast({ 
+            message: 'CONFIRME A SENHA NO FORMATO CORRETO', 
+            type: 'is-link', 
+            position: 'center', 
+            pauseOnHover: true,
+            dismissible: true,
+            closeOnClick: true,
+            opacity: 1, })
         $("#senha2").focus();
         return;
     }
     else if (senha1 !== senha2){
-        alert("As senhas não são iguais")
+        bulmaToast.toast({ 
+            message: 'AS SENHAS NÃO CONFEREM', 
+            type: 'is-link', 
+            position: 'center', 
+            pauseOnHover: true,
+            dismissible: true,
+            closeOnClick: true,
+            opacity: 1, })
         return;
+    }
+    else{
+        bulmaToast.toast({ 
+            message: 'USUÁRIO CRIADO COM SUCESSO', 
+            type: 'is-success', 
+            position: 'center', 
+            pauseOnHover: true,
+            dismissible: true,
+            closeOnClick: true,
+            opacity: 1, })
+        
     }
 });
