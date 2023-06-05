@@ -142,7 +142,7 @@
     <!--INICIO DO MEU CADASTRO-->
 
     
-    <section class="hero is-fullheight">
+    <section class="hero is-fullheight " >
         <div class="hero-body is-justify-content-center">
             <div class="columns is-flex is-flex-direction-column box">
                 <p class="title is-1">Crie sua conta na <span class="corVermelho">Telecall</span></p>
@@ -153,7 +153,7 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" type="text" placeholder="Digite seu nome completo">
+                                <input class="input" id="nome" type="text" placeholder="Digite seu nome completo">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-user"></i>
                                 </span>
@@ -167,7 +167,7 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" type="text" placeholder="Digite seu nome completo">
+                                <input class="input" id="nomeMaterno" type="text" placeholder="Digite seu nome completo">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-user"></i>
                                 </span>
@@ -180,7 +180,7 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" type="date">
+                                <input class="input" id="data" type="date">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-calendar"></i>
                                 </span>
@@ -195,7 +195,7 @@
                         <div class="field">
                             <p class="control">
                                 <div class="select">
-                                    <select>
+                                    <select id="sexo">
                                         <option>Selecione</option>
                                         <option>Masculino</option>
                                         <option>Feminino</option>
@@ -254,7 +254,7 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" type="text" placeholder="Digite seu endereço completo">
+                                <input class="input" id="endereco" type="text" placeholder="Digite seu endereço completo">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </span>
@@ -268,11 +268,11 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" type="text" placeholder="Digite seu login">
+                                <input class="input" id="login" type="text" placeholder="Digite seu login">
                                 <span class="icon is-small is-left">
                                     <i class="fa-solid fa-user-lock"></i>                                
                                 </span>
-                                <p class="help is-link">O campo Login deve ter exatamente 6 caracteres alfabéticos.</p>                            
+                                <p class="help is-link">O campo Login deve ter  <span class="exatamente">exatamente</span> 6 caracteres alfabéticos.</p>                            
 
                             </p>
                             
@@ -285,7 +285,7 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" type="password" placeholder="Digite sua senha">
+                                <input class="input" id="senha1" type="password" placeholder="Digite sua senha">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-lock"></i>
                                 </span>
@@ -300,7 +300,7 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" type="password" placeholder="Confirme sua senha">
+                                <input class="input"  id="senha2" type="password" placeholder="Confirme sua senha">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-lock"></i>
                                 </span>
@@ -316,8 +316,6 @@
                     </div>
                 </div>
             </div>
-            </div>
-            
         </div>
 
     </section>
