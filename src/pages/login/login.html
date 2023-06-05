@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/src/frameworks/fontawesome/css/all.css">
     <script src="/src/js/jquery-3.7.0.js.js"></script>
     <script src="/src/js/jquery.mask.min.js"></script>
+    <script src="/src/frameworks/node_modules/bulma/bulma-toast/dist/bulma-toast.min.js"></script>
+
 
 
 </head>
@@ -150,11 +152,11 @@
                     <p class="title is-3">Bem vindo a <span class="corVermelho">Telecall</span> </p>
                     <p class="subtitle is-6" id="pCinza">Bem vindo de volta! Por favor, insira seus dados.</p>
                     <label for="login">Login:</label>
-                    <input class="input is-danger" id="login" type="text" placeholder="Digite aqui seu LOGIN">
+                    <input class="input is-danger" id="login" type="text" placeholder="Digite aqui seu login" required>
                 </div>
                 <div class="column">
                     <label for="senha">Senha</label>
-                    <input class="input is-danger" type="password" placeholder="Digite aqui sua senha">
+                    <input class="input is-danger" id="senha" type="password" placeholder="Digite aqui sua senha" required>
                     <a href="#" class="is-size-7 has-text-link">Esqueceu a senha?</a>
                 </div>
                 <div class="column">
