@@ -36,50 +36,58 @@ $("#idcadastro").click(function(){
 
     if (nome.length < 15 || nome.length > 60 || !nome.match(/^[a-zA-Z\s]+$/)) {
         alert("Nome");
-
+        $("#nome").focus();
         return;
       } 
     else if (nomeMaterno == ""){
         alert("nome materno");
-        
+        $("#nomeMaterno").focus();
         return;
     }
     else if (data == ""){
         alert("data");
+        $("#data").focus();
 
         return;
     }
     else if (sexo == "Selecione"){
         alert("selecione o sexo");
+        $("#sexo").focus();
         return;
     }
     else if (cpf.length < 14){
         alert("cpf");
+        $("#cpf").focus();
         return;
     }
     else if (!tell1.match(/^\(\+55\)\d{2}-\d{9}$/)){
         alert("telefone celular");
+        $("#tell1").focus();
         return;
     }
     else if (!tell2.match(/^\(\+55\)\d{2}-\d{9}$/)){
         alert("telefone fixo");
+        $("#tell2").focus();
         return;
     }
     else if (endereco == ""){
         alert("endereco");
+        $("#endereco").focus();
         return;
     }
     else if (!login.match(/^[a-zA-Z]{6}$/)){
         alert("login");
+        $("#login").focus();
         return;
     }
     else if (!senha1.match(/^[a-zA-Z]{8}$/)){
         alert("senha1");
-
+        $("#senha1").focus();
         return;
     }
     else if (!senha2.match(/^[a-zA-Z]{8}$/)){
         alert("senha2");
+        $("#senha2").focus();
         return;
     }
     else if (senha1 !== senha2){
