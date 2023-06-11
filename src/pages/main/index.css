@@ -1,3 +1,5 @@
+
+/*PADRÃO*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +9,7 @@
 body{
   padding-top: 60px;
 }
-
+/* NAVBAR*/
 .navbar-item img {
   max-height: 2.75rem;
 }
@@ -64,22 +66,26 @@ swiper-container {
   margin-right: auto;
 }
 /*FINAL DO MEU SLIDE*/
-
+/*TITLES DA MINHA SECTION*/
 .title{
   text-align: center;
+  padding-bottom: 55px;
 }
 .section.is-large {
   padding: 5rem 6rem;
 }
+/*TITLES DA MINHA SECTION*/
 
-
+/*CORES DE TEXTOS*/
 .blue{
   color: rgb(0, 59, 113)
 }
 .red{
   color: rgb(216, 22, 38);
 }
+/*CORES DE TEXTO*/
 
+/*CONTEÚDO DA SECTION TRANFORMAÇAO DIGITAL*/
 
 .aProduct {
   background-color: rgb(216, 22, 38);
@@ -93,4 +99,10 @@ swiper-container {
 .aProduct:hover {
   transform: scale(1.1);
   color: white;
+}
+/*CONTEÚDO DA SECTION TRANFORMAÇAO DIGITAL*/
+
+.hoverimg:hover{
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
 }
