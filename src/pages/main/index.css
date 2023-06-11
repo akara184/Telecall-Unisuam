@@ -37,7 +37,7 @@ body{
   }
 }
 /* FIM DA NAVBAR */
-
+/*INICIO DO MEU SLIDE*/
 swiper-container {
   width: 100%;
   height: 100%;
@@ -62,4 +62,35 @@ swiper-slide img {
 swiper-container {
   margin-left: auto;
   margin-right: auto;
+}
+/*FINAL DO MEU SLIDE*/
+
+.title{
+  text-align: center;
+}
+.section.is-large {
+  padding: 5rem 6rem;
+}
+
+
+.blue{
+  color: rgb(0, 59, 113)
+}
+.red{
+  color: rgb(216, 22, 38);
+}
+
+
+.aProduct {
+  background-color: rgb(216, 22, 38);
+  color: white;
+  border-radius: 4px;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+.aProduct:hover {
+  transform: scale(1.1);
+  color: white;
 }
