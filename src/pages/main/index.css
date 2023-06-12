@@ -121,7 +121,7 @@ color: #3850b7;
 }
 
 
-
+/*INICIO DO FOOTER*/
 
 .footer-description {
   font-size: 14px;
@@ -152,7 +152,7 @@ color: #3850b7;
 
 .social-links .icon {
   width: 18px;
-  height: 18px
+  height: 18px;
 }
 
 .footer-nav ul {
@@ -198,3 +198,6 @@ color: #3850b7;
   font-size: 15px;
   padding: 25px 0;
 }
+
+
+/*FINAL DO FOOTER*/

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet - Banda Larga - Telecall</title>
+    <link rel="stylesheet" href="/src/frameworks/bulma/bulma/css/bulma.css" />
+    <link rel="icon" type="image/jpg" href="/src/images/Untitled.png"">
+    <link rel="stylesheet" href="/src/pages/internet/banda-larga/banda-larga.css" />
+    <link rel="stylesheet" href="/src/frameworks/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="/src/frameworks/aos/aos/dist/aos.css">
+    <link rel="stylesheet" href="/src/layouts/nav.css">
+    <script src="/src/js/jquery-3.7.0.js.js"></script>
+    <script src="/src/frameworks/bulma/bulma/bulma-toast/dist/bulma-toast.min.js"></script>
+    <script src="/src/frameworks/aos/aos/dist/aos.js"></script>
+</head>
+
+<body>
+    <!--INICIO DA NAV -->
+    <nav class="navbar is-fixed-top " role="navigation" aria-label="main navigation">
+        <!--Logo / Brand-->
+        <div class="navbar-brand">
+            <a class="navbar-item" id="logoid" href="/src/pages/main/index.html">
+                <img src="/src/images/telecall-logo-removebg-preview.png" alt="site logo" class="" />
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarMain" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/src/pages/main/index.html"> Home </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="/src/pages/internet/internet.html"> Internet </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="/src/pages/internet/internet-dedicada/internet-dedicada.html"> Internet Dedicada </a>
+                        <a class="navbar-item" href="/src/pages/internet/banda-larga/banda-larga.html"> Banda larga </a>
+                        <a class="navbar-item" href="/src/pages/internet/wi-fi/wi-fi.html"> Wi-Fi </a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link"> Telefonia </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item"> PABX IP Virtual </a>
+                        <a class="navbar-item"> Números 0800 e 40XX </a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link"> Rede e infraestrutura </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item"> Ponto-a-Ponto </a>
+                        <a class="navbar-item"> MPLS </a>
+                        <a class="navbar-item"> Fibra Apagada e Dutos </a>
+                        <a class="navbar-item"> Co-location </a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link"> Mobilidade </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item"> Celular Empresarial </a>
+                        <a class="navbar-item"> MVNA/E </a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link"> CPaaS </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item"> 2FA </a>
+                        <a class="navbar-item"> Número Máscara </a>
+                        <a class="navbar-item"> Google Verified Calls </a>
+                        <a class="navbar-item"> SMS Programável </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a href="">
+                        <ion-icon name="accessibility-sharp"></ion-icon>
+                        Acessibilidade
+                    </a>
+                </div>
+                <div class="navbar-item" id="responsiveButton">
+                    <div class="buttons">
+                        <a class="button is-light is-rounded" href="/src/pages/login/login.html" id="buttonlogin">
+                            <i class="fa-solid fa-circle-user" id="loginIcon"></i>
+                            Área do cliente
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--FINAL DA MINHA NAV-->
+    <section class="hero is-fullheight">
+            <img src="/src/images/Banner-Banda-Larga.png" alt="">
+    </section>
+
+
+
+    <!--PRINCIPAIS SCRIPTS-->
+    <script src="/src/js/fade.js"></script>
+    <script src="/src/js/mobilemenu.js"></script>
+    <script src="/src/js/banda-larga.js"></script>
+</body>
+
+</html>

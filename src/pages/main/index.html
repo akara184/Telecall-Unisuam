@@ -5,17 +5,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Internet - Telecall</title>
+    <title>Site Oficial - Telecall</title>
     <link rel="stylesheet" href="/src/frameworks/bulma/bulma/css/bulma.css" />
     <link rel="icon" type="image/jpg" href="/src/images/Untitled.png"">
     <link rel=" stylesheet" href="/src/pages/main/index.css" />
     <link rel="stylesheet" href="/src/frameworks/fontawesome/css/all.css" />
     <link rel="stylesheet" href="/src/frameworks/swiper/swiper/swiper-element-bundle.css">
     <link rel="stylesheet" href="/src/frameworks/aos/aos/dist/aos.css">
+    <link rel="stylesheet" href="/src/layouts/nav.css">
     <script src="/src/js/jquery-3.7.0.js.js"></script>
     <script src="/src/frameworks/bulma/bulma/bulma-toast/dist/bulma-toast.min.js"></script>
     <script src="/src/frameworks/swiper/swiper/swiper-element-bundle.min.js"></script>
-
+    <script src="/src/frameworks/aos/aos/dist/aos.js"></script>
 
 </head>
 
@@ -37,11 +38,11 @@
             <div class="navbar-start">
                 <a class="navbar-item" href="index.html"> Home </a>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link"> Internet </a>
+                    <a class="navbar-link" href="/src/pages/internet/internet.html"> Internet </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item"> Internet Dedicada </a>
-                        <a class="navbar-item"> Banda larga </a>
-                        <a class="navbar-item"> Wi-Fi </a>
+                        <a class="navbar-item" href="/src/pages/internet/internet-dedicada/internet-dedicada.html"> Internet Dedicada </a>
+                        <a class="navbar-item" href="/src/pages/internet/banda-larga/banda-larga.html"> Banda larga </a>
+                        <a class="navbar-item" href="/src/pages/internet/wi-fi/wi-fi.html"> Wi-Fi </a>
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
@@ -64,7 +65,6 @@
                     <a class="navbar-link"> Mobilidade </a>
                     <div class="navbar-dropdown">
                         <a class="navbar-item"> Celular Empresarial </a>
-                        <a class="navbar-item"> MPLS </a>
                         <a class="navbar-item"> MVNA/E </a>
                     </div>
                 </div>
@@ -304,22 +304,22 @@
                     <a href="/src/pages/main/index.html" class="logo is-flex is-centered">
                         <img alt="telecall" src="/src/images/telecall-nome.png" height="35" width="150">
                     </a>
-                    <p class="subtitle is-6 footer-description"> 
-                        contatos:  <br>
+                    <p class="subtitle is-6 footer-description">
+                        contatos: <br>
                         Email: suporte@telecall.com <br>
                         Tel: (21) 3030-1010
-                        </p>
+                    </p>
                     <div class="social-links is-flex mt-3">
-                        <a href="https://www.linkedin.com/company/telecall?originalSubdomain=br">
+                        <a href="https://www.linkedin.com/company/telecall?originalSubdomain=br" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://www.facebook.com/TelecallBr/?locale=pt_BR">
+                        <a href="https://www.facebook.com/TelecallBr/?locale=pt_BR" target="_blank">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="https://www.instagram.com/telecallbr/">
+                        <a href="https://www.instagram.com/telecallbr/" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="mailto:suporte@telecall.com">
+                        <a href="mailto:suporte@telecall.com" target="_blank">
                             <i class="fa fa-envelope"></i>
                         </a>
                     </div>
@@ -432,7 +432,7 @@
     <!--FINAL DA FOOTER -->
 
     <!--PRINCIPAIS SCRIPTS-->
-    <script src="/src/frameworks/aos/aos/dist/aos.js"></script>
+    <script src="/src/js/fade.js"></script>
     <script src="/src/js/mobilemenu.js"></script>
     <script src="/src/js/index.js"></script>
 </body>
