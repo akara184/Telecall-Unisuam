@@ -63,3 +63,8 @@ body {
     padding-left: 15px;
     padding-bottom: 10px;
 }
+.disabled{
+  pointer-events: none;
+  cursor: default;
+  background-color: rgba(95, 92, 92, 0.267);
+}

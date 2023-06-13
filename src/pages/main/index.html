@@ -8,7 +8,7 @@
     <title>Site Oficial - Telecall</title>
     <link rel="stylesheet" href="/src/frameworks/bulma/bulma/css/bulma.css" />
     <link rel="icon" type="image/jpg" href="/src/images/Untitled.png"">
-    <link rel=" stylesheet" href="/src/pages/main/index.css" />
+    <link rel="stylesheet" href="/src/pages/main/index.css"/>
     <link rel="stylesheet" href="/src/frameworks/fontawesome/css/all.css" />
     <link rel="stylesheet" href="/src/frameworks/swiper/swiper/swiper-element-bundle.css">
     <link rel="stylesheet" href="/src/frameworks/aos/aos/dist/aos.css">
@@ -22,13 +22,13 @@
 
 <body>
     <!--INICIO DA NAV -->
-    <nav class="navbar is-fixed-top " role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <!--Logo / Brand-->
         <div class="navbar-brand">
-            <a class="navbar-item" id="logoid" href="index.html">
-                <img src="/src/images/telecall-logo-removebg-preview.png" alt="site logo" class="" />
+            <a class="navbar-item" id="logoid" href="/src/pages/main/index.html">
+                <img src="/src/images/telecall-logo-removebg-preview.png" alt="site logo" class="">
             </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <a role="button" class="navbar-burger " aria-label="menu" aria-expanded="true">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -36,45 +36,92 @@
         </div>
         <div id="navbarMain" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item" href="index.html"> Home </a>
+                <a class="navbar-item" href="/src/pages/main/index.html">
+                    Home
+                </a>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link" href="/src/pages/internet/internet.html"> Internet </a>
+                    <a class="navbar-link" href="/src/pages/internet/internet.html">
+                        Internet
+                    </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item" href="/src/pages/internet/internet-dedicada/internet-dedicada.html"> Internet Dedicada </a>
-                        <a class="navbar-item" href="/src/pages/internet/banda-larga/banda-larga.html"> Banda larga </a>
-                        <a class="navbar-item" href="/src/pages/internet/wi-fi/wi-fi.html"> Wi-Fi </a>
+                        <a class="navbar-item is-active"
+                            href="/src/pages/internet/internet-dedicada/internet-dedicada.html">
+                            Internet Dedicada
+                        </a>
+                        <a class="navbar-item disabled">
+                            Banda larga
+                        </a>
+                        <a class="navbar-item disabled">
+                            Wi-Fi
+                        </a>
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link"> Telefonia </a>
+                    <a class="navbar-link" href="/src/pages/telefonia/telefonia.html">
+                        Telefonia
+                    </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item"> PABX IP Virtual </a>
-                        <a class="navbar-item"> Números 0800 e 40XX </a>
+                        <a class="navbar-item is-active">
+                            PABX IP Virtual
+                        </a>
+                        <a class="navbar-item disabled">
+                            Números 0800 e 40XX
+                        </a>
+
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link"> Rede e infraestrutura </a>
+                    <a class="navbar-link ">
+                        Rede e infraestrutura
+                    </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item"> Ponto-a-Ponto </a>
-                        <a class="navbar-item"> MPLS </a>
-                        <a class="navbar-item"> Fibra Apagada e Dutos </a>
-                        <a class="navbar-item"> Co-location </a>
+                        <a class="navbar-item is-active">
+                            Ponto-a-Ponto
+                        </a>
+                        <a class="navbar-item disabled">
+                            MPLS
+                        </a>
+                        <a class="navbar-item disabled">
+                            Fibra Apagada e Dutos
+                        </a>
+                        <a class="navbar-item disabled">
+                            Co-location
+                        </a>
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link"> Mobilidade </a>
+                    <a class="navbar-link">
+                        Mobilidade
+                    </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item"> Celular Empresarial </a>
-                        <a class="navbar-item"> MVNA/E </a>
+                        <a class="navbar-item is-active">
+                            Celular Empresarial
+                        </a>
+                        <a class="navbar-item disabled">
+                            MPLS
+                        </a>
+                        <a class="navbar-item disabled">
+                            MVNA/E
+                        </a>
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link"> CPaaS </a>
+                    <a class="navbar-link">
+                        CPaaS
+                    </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item"> 2FA </a>
-                        <a class="navbar-item"> Número Máscara </a>
-                        <a class="navbar-item"> Google Verified Calls </a>
-                        <a class="navbar-item"> SMS Programável </a>
+                        <a class="navbar-item">
+                            2FA
+                        </a>
+                        <a class="navbar-item">
+                            Número Máscara
+                        </a>
+                        <a class="navbar-item">
+                            Google Verified Calls
+                        </a>
+                        <a class="navbar-item">
+                            SMS Programável
+                        </a>
                     </div>
                 </div>
             </div>
@@ -88,7 +135,7 @@
                 </div>
                 <div class="navbar-item" id="responsiveButton">
                     <div class="buttons">
-                        <a class="button is-light is-rounded" href="/src/pages/login/login.html" id="buttonlogin">
+                        <a class="button is-light is-rounded" id="buttonlogin" href="/src/pages/login/login.html">
                             <i class="fa-solid fa-circle-user" id="loginIcon"></i>
                             Área do cliente
                         </a>
@@ -125,7 +172,7 @@
                     </div>
                     <footer class="card-footer">
                         <p class="card-footer-item">
-                            <a href=""> <button class="button aProduct">Saiba mais</button></a>
+                            <a href="../internet/internet.html"> <button class="button aProduct">Saiba mais</button></a>
                         </p>
                     </footer>
                 </div>

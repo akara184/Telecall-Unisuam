@@ -39,46 +39,47 @@
                         Internet
                     </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item" href="/src/pages/internet/internet-dedicada/internet-dedicada.html">
+                        <a class="navbar-item is-active"
+                            href="/src/pages/internet/internet-dedicada/internet-dedicada.html">
                             Internet Dedicada
                         </a>
-                        <a class="navbar-item" href="/src/pages/internet/banda-larga/banda-larga.html">
+                        <a class="navbar-item disabled">
                             Banda larga
                         </a>
-                        <a class="navbar-item" href="/src/pages/internet/wi-fi/wi-fi.html">
+                        <a class="navbar-item disabled">
                             Wi-Fi
                         </a>
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
+                    <a class="navbar-link" href="/src/pages/telefonia/telefonia.html">
                         Telefonia
                     </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item">
+                        <a class="navbar-item is-active">
                             PABX IP Virtual
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item disabled">
                             Números 0800 e 40XX
                         </a>
 
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
+                    <a class="navbar-link ">
                         Rede e infraestrutura
                     </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item">
+                        <a class="navbar-item is-active">
                             Ponto-a-Ponto
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item disabled">
                             MPLS
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item disabled">
                             Fibra Apagada e Dutos
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item disabled">
                             Co-location
                         </a>
                     </div>
@@ -88,13 +89,13 @@
                         Mobilidade
                     </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item">
+                        <a class="navbar-item is-active">
                             Celular Empresarial
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item disabled">
                             MPLS
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item disabled">
                             MVNA/E
                         </a>
                     </div>
@@ -111,7 +112,7 @@
                             Número Máscara
                         </a>
                         <a class="navbar-item">
-                            Google Verified Calls   
+                            Google Verified Calls
                         </a>
                         <a class="navbar-item">
                             SMS Programável
@@ -129,7 +130,7 @@
                 </div>
                 <div class="navbar-item" id="responsiveButton">
                     <div class="buttons">
-                        <a class="button is-light is-rounded"" id="buttonlogin" href="/src/pages/login/login.html">
+                        <a class="button is-light is-rounded" id="buttonlogin" href="/src/pages/login/login.html">
                             <i class="fa-solid fa-circle-user" id="loginIcon"></i>
                             Área do cliente
                         </a>
@@ -142,23 +143,25 @@
 
     <!--INICIO DO MEU CADASTRO-->
 
-    
-    <section class="hero is-fullheight " >
+
+    <section class="hero is-fullheight ">
         <div class="hero-body is-justify-content-center">
             <div class="columns is-flex is-flex-direction-column box">
                 <p class="title is-1">Crie sua conta na <span class="corVermelho">Telecall</span></p>
                 <p class="subtitle is-5" id="pCinza">Explore um novo mundo de comunicação e colaboração.</p>
-                
+
                 <div class="field">
                     <label class="label">Nome:</label>
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="nome" type="text" placeholder="Digite seu nome completo" required>
+                                <input class="input" id="nome" type="text" placeholder="Digite seu nome completo"
+                                    required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-user"></i>
                                 </span>
-                                <p class="help is-link">O campo nome <span class="exatamente"> deve ter no mínimo 15 caracteres e no máximo 60 caracteres alfabéticos</span></p>                            
+                            <p class="help is-link">O campo nome <span class="exatamente"> deve ter no mínimo 15
+                                    caracteres e no máximo 60 caracteres alfabéticos</span></p>
                             </p>
                         </div>
                     </div>
@@ -168,14 +171,15 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="nomeMaterno" type="text" placeholder="Digite seu nome completo" required>
+                                <input class="input" id="nomeMaterno" type="text" placeholder="Digite seu nome completo"
+                                    required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-user"></i>
                                 </span>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="field">
                     <label class="label">Data de Nascimento:</label>
                     <div class="field-body">
@@ -189,25 +193,25 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="field">
                     <label class="label">Sexo:</label>
                     <div class="field-body">
                         <div class="field">
                             <p class="control">
-                                <div class="select">
-                                    <select id="sexo">
-                                        <option>Selecione</option>
-                                        <option>Masculino</option>
-                                        <option>Feminino</option>
-                                        <option>Outro</option>
-                                    </select>
-                                </div>
+                            <div class="select">
+                                <select id="sexo">
+                                    <option>Selecione</option>
+                                    <option>Masculino</option>
+                                    <option>Feminino</option>
+                                    <option>Outro</option>
+                                </select>
+                            </div>
                             </p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="field">
                     <label class="label">CPF:</label>
                     <div class="field-body">
@@ -217,49 +221,52 @@
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-id-card"></i>
                                 </span>
-                                <p class="help is-link">EX: 000.000.000-00</p>
+                            <p class="help is-link">EX: 000.000.000-00</p>
                             </p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="field">
                     <label class="label">Telefone Celular:</label>
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="tell1" type="tel" placeholder="Digite seu telefone celular" required>
+                                <input class="input" id="tell1" type="tel" placeholder="Digite seu telefone celular"
+                                    required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-mobile-alt"></i>
                                 </span>
-                                <p class="help is-link">EX:(+55)DD-000000000</p>
+                            <p class="help is-link">EX:(+55)DD-000000000</p>
                             </p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="field">
                     <label class="label">Telefone Fixo:</label>
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="tell2" type="tel" placeholder="Digite seu telefone fixo" required>
+                                <input class="input" id="tell2" type="tel" placeholder="Digite seu telefone fixo"
+                                    required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-phone"></i>
                                 </span>
-                                <p class="help is-link">EX:(+55)DD-000000000</p>
+                            <p class="help is-link">EX:(+55)DD-000000000</p>
 
                             </p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="field">
                     <label class="label">Endereço Completo:</label>
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="endereco" type="text" placeholder="Digite seu endereço completo" required>
+                                <input class="input" id="endereco" type="text"
+                                    placeholder="Digite seu endereço completo" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </span>
@@ -275,48 +282,54 @@
                             <p class="control has-icons-left">
                                 <input class="input" id="login" type="text" placeholder="Digite seu login" required>
                                 <span class="icon is-small is-left">
-                                    <i class="fa-solid fa-user-lock"></i>                                
+                                    <i class="fa-solid fa-user-lock"></i>
                                 </span>
-                                <p class="help is-link">O campo Login deve ter  <span class="exatamente">exatamente</span> 6 caracteres alfabéticos.</p>                            
+                            <p class="help is-link">O campo Login deve ter <span class="exatamente">exatamente</span> 6
+                                caracteres alfabéticos.</p>
 
                             </p>
-                            
+
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="field">
                     <label class="label">Senha:</label>
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="senha1" type="password" placeholder="Digite sua senha" required>
+                                <input class="input" id="senha1" type="password" placeholder="Digite sua senha"
+                                    required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-lock"></i>
                                 </span>
-                                <p class="help is-link">O campo Senha <span class="exatamente"> deve ter 8 caracteres alfabéticos</span>.</p>
+                            <p class="help is-link">O campo Senha <span class="exatamente"> deve ter 8 caracteres
+                                    alfabéticos</span>.</p>
                             </p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="field">
                     <label class="label">Confirme a Senha:</label>
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input"  id="senha2" type="password" placeholder="Confirme sua senha" required>
+                                <input class="input" id="senha2" type="password" placeholder="Confirme sua senha"
+                                    required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-lock"></i>
                                 </span>
-                                <p class="help is-link">O campo Senha <span class="exatamente"> deve ter 8 caracteres alfabéticos</span>, idêntico ao primeiro.</p>
+                            <p class="help is-link">O campo Senha <span class="exatamente"> deve ter 8 caracteres
+                                    alfabéticos</span>, idêntico ao primeiro.</p>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="field is-grouped">
                     <div class="column">
-                        <button class="button is-fullwidth is-medium" id="idcadastro" type="submit" value="Submit input">Cadastre-se</button>
+                        <button class="button is-fullwidth is-medium" id="idcadastro" type="button"
+                            value="Submit input">Cadastre-se</button>
                     </div>
                 </div>
             </div>
@@ -324,7 +337,7 @@
         <p class="subtitle is-6" id="pcop">© Telecall 2023 </p>
 
     </section>
-    
+
 
 
     <script src="/src/js/mobilemenu.js"></script>

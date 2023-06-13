@@ -19,13 +19,13 @@
 
 <body>
     <!--INICIO DA NAV -->
-    <nav class="navbar is-fixed-top " role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <!--Logo / Brand-->
         <div class="navbar-brand">
             <a class="navbar-item" id="logoid" href="/src/pages/main/index.html">
-                <img src="/src/images/telecall-logo-removebg-preview.png" alt="site logo" class="" />
+                <img src="/src/images/telecall-logo-removebg-preview.png" alt="site logo" class="">
             </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <a role="button" class="navbar-burger " aria-label="menu" aria-expanded="true">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -33,46 +33,92 @@
         </div>
         <div id="navbarMain" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item" href="/src/pages/main/index.html"> Home </a>
+                <a class="navbar-item" href="/src/pages/main/index.html">
+                    Home
+                </a>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link" href="/src/pages/internet/internet.html"> Internet </a>
+                    <a class="navbar-link" href="/src/pages/internet/internet.html">
+                        Internet
+                    </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item" href="/src/pages/internet/internet-dedicada/internet-dedicada.html">
-                            Internet Dedicada </a>
-                        <a class="navbar-item" href="/src/pages/internet/banda-larga/banda-larga.html"> Banda larga </a>
-                        <a class="navbar-item" href="/src/pages/internet/wi-fi/wi-fi.html"> Wi-Fi </a>
+                        <a class="navbar-item is-active"
+                            href="/src/pages/internet/internet-dedicada/internet-dedicada.html">
+                            Internet Dedicada
+                        </a>
+                        <a class="navbar-item disabled">
+                            Banda larga
+                        </a>
+                        <a class="navbar-item disabled">
+                            Wi-Fi
+                        </a>
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link"> Telefonia </a>
+                    <a class="navbar-link" href="/src/pages/telefonia/telefonia.html">
+                        Telefonia
+                    </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item"> PABX IP Virtual </a>
-                        <a class="navbar-item"> Números 0800 e 40XX </a>
+                        <a class="navbar-item is-active">
+                            PABX IP Virtual
+                        </a>
+                        <a class="navbar-item disabled">
+                            Números 0800 e 40XX
+                        </a>
+
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link"> Rede e infraestrutura </a>
+                    <a class="navbar-link ">
+                        Rede e infraestrutura
+                    </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item"> Ponto-a-Ponto </a>
-                        <a class="navbar-item"> MPLS </a>
-                        <a class="navbar-item"> Fibra Apagada e Dutos </a>
-                        <a class="navbar-item"> Co-location </a>
+                        <a class="navbar-item is-active">
+                            Ponto-a-Ponto
+                        </a>
+                        <a class="navbar-item disabled">
+                            MPLS
+                        </a>
+                        <a class="navbar-item disabled">
+                            Fibra Apagada e Dutos
+                        </a>
+                        <a class="navbar-item disabled">
+                            Co-location
+                        </a>
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link"> Mobilidade </a>
+                    <a class="navbar-link">
+                        Mobilidade
+                    </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item"> Celular Empresarial </a>
-                        <a class="navbar-item"> MVNA/E </a>
+                        <a class="navbar-item is-active">
+                            Celular Empresarial
+                        </a>
+                        <a class="navbar-item disabled">
+                            MPLS
+                        </a>
+                        <a class="navbar-item disabled">
+                            MVNA/E
+                        </a>
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link"> CPaaS </a>
+                    <a class="navbar-link">
+                        CPaaS
+                    </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item"> 2FA </a>
-                        <a class="navbar-item"> Número Máscara </a>
-                        <a class="navbar-item"> Google Verified Calls </a>
-                        <a class="navbar-item"> SMS Programável </a>
+                        <a class="navbar-item">
+                            2FA
+                        </a>
+                        <a class="navbar-item">
+                            Número Máscara
+                        </a>
+                        <a class="navbar-item">
+                            Google Verified Calls
+                        </a>
+                        <a class="navbar-item">
+                            SMS Programável
+                        </a>
                     </div>
                 </div>
             </div>
@@ -86,7 +132,7 @@
                 </div>
                 <div class="navbar-item" id="responsiveButton">
                     <div class="buttons">
-                        <a class="button is-light is-rounded" href="/src/pages/login/login.html" id="buttonlogin">
+                        <a class="button is-light is-rounded" id="buttonlogin" href="/src/pages/login/login.html">
                             <i class="fa-solid fa-circle-user" id="loginIcon"></i>
                             Área do cliente
                         </a>
@@ -118,14 +164,14 @@
                     </div>
                     <footer class="card-footer">
                         <p class="card-footer-item">
-                            <a href="internet-dedicada/internet-dedicada.html"> <button
-                                    class="button aProduct">Saiba mais</button></a>
+                            <a href="internet-dedicada/internet-dedicada.html">
+                                <button class="button aProduct">Saiba mais</button></a>
                         </p>
                     </footer>
                 </div>
             </div>
             <div class="column is-4-tablet is-3-desktop">
-                <div class="card">
+                <div class="card disabled">
                     <div class="card-content">
                         <div class="card-image has-text-centered px-4">
                             <img src="/src/images/terra.png" alt="">
@@ -140,14 +186,14 @@
 
                     <footer class="card-footer">
                         <p class="card-footer-item">
-                            <a href="banda-larga/banda-larga.html"> <button
-                                    class="button aProduct">Saiba mais</button></a>
+                            <a href="banda-larga/banda-larga.html"> <button class="button aProduct">Saiba
+                                    mais</button></a>
                         </p>
                     </footer>
                 </div>
             </div>
             <div class="column is-4-tablet is-3-desktop">
-                <div class="card">
+                <div class="card disabled">
                     <div class="card-content">
                         <div class="card-image has-text-centered px-4">
                             <img src="/src/images/wi-fi.png" alt="">
@@ -156,7 +202,7 @@
                         </div>
                         <hr>
                         <p class="title is-size-6">
-                            Internet <span class="red"> sem fio</span> de alta <span class="red">qualidade</span> 
+                            Internet <span class="red"> sem fio</span> de alta <span class="red">qualidade</span>
                             e velocidade.
                         </p>
                     </div>
@@ -170,187 +216,187 @@
         </div>
     </section>
     <!--FIM DA PRIMEIRA SECTION-->
-<!--INICIO DO EMAIL PARA CONTATO-->
-<div class="section has-background-light contact" id="contact">
-    <div class="container">
-        <div class="columns is-multiline" data-aos="fade-in-up" data-aos-easing="linear">
-            <div class="column is-12 about-me">
-                <h1 class="title has-text-centered section-title red">
-                    Entre em contato pelo Email
-                </h1>
-            </div>
-            <div class="column is-8 is-offset-2">
-                <form action="#" method="POST">
-                    <div class="field">
-                        <label class="nome red">Nome</label>
-                        <div class="control has-icons-left">
-                            <input class="input" type="text" placeholder="Ex. Vasco da Gama" name="Name" />
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-user"></i>
-                            </span>
+    <!--INICIO DO EMAIL PARA CONTATO-->
+    <div class="section has-background-light contact" id="contact">
+        <div class="container">
+            <div class="columns is-multiline" data-aos="fade-in-up" data-aos-easing="linear">
+                <div class="column is-12 about-me">
+                    <h1 class="title has-text-centered section-title red">
+                        Entre em contato pelo Email
+                    </h1>
+                </div>
+                <div class="column is-8 is-offset-2">
+                    <form action="#" method="POST">
+                        <div class="field">
+                            <label class="nome red">Nome</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="text" placeholder="Ex. Vasco da Gama" name="Name" />
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="field">
-                        <label class="email red">Email</label>
-                        <div class="control has-icons-left">
-                            <input class="input" type="email" placeholder="Ex. vasco@gmail.com" name="Email" />
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-envelope"></i>
-                            </span>
+                        <div class="field">
+                            <label class="email red">Email</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="email" placeholder="Ex. vasco@gmail.com" name="Email" />
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="field">
-                        <label class="label red">Message</label>
-                        <div class="control">
-                            <textarea class="textarea" placeholder="CHORA QUE EU TE ESCUTO"
-                                name="Message"></textarea>
+                        <div class="field">
+                            <label class="label red">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="CHORA QUE EU TE ESCUTO"
+                                    name="Message"></textarea>
+                            </div>
                         </div>
-                    </div>
-                    <div class="field">
-                        <div class="control">
-                            <button class="button is-large is-fullwidth  is-link submit-button">
-                                Enviar&nbsp;&nbsp; <!--Espaço sem quebra-->
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-large is-fullwidth  is-link submit-button">
+                                    Enviar&nbsp;&nbsp; <!--Espaço sem quebra-->
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!--FINAL DO EMAIL PARA CONTATO-->
-<!--FOOTER-->
-<footer id="footer" class="mt-4">
-    <div class="container">
-        <div class="columns is-multiline is-centered">
-            <div class="column is-4-fullhd is-3-widescreen is-4-desktop is-6-tablet is-12-mobile mb-6">
-                <a href="/src/pages/main/index.html" class="logo is-flex is-centered">
-                    <img alt="telecall" src="/src/images/telecall-nome.png" height="35" width="150">
-                </a>
-                <p class="subtitle is-6 footer-description">
-                    contatos: <br>
-                    Email: suporte@telecall.com <br>
-                    Tel: (21) 3030-1010
-                </p>
-                <div class="social-links is-flex mt-3">
-                    <a href="https://www.linkedin.com/company/telecall?originalSubdomain=br" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.facebook.com/TelecallBr/?locale=pt_BR" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/telecallbr/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="mailto:suporte@telecall.com" target="_blank">
-                        <i class="fa fa-envelope"></i>
-                    </a>
+                    </form>
                 </div>
             </div>
-            <div class="column is-2-widescreen is-4-desktop is-6-tablet is-12-mobile">
-                <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Company</h3>
-                <nav class="footer-nav">
-                    <ul>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">About Us</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="column is-2-widescreen is-4-desktop is-6-tablet is-12-mobile">
-                <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Help &amp; Resources</h3>
-                <nav class="footer-nav">
-                    <ul>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">Knowledge Center</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">Knowledge Center</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">Knowledge Center</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">Knowledge Center</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="column is-2-widescreen is-4-desktop is-6-tablet is-12-mobile">
-                <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Legal</h3>
-                <nav class="footer-nav">
-                    <ul>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">Terms & Conditions</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">Terms & Conditions</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">Terms & Conditions</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">Terms & Conditions</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="column is-2-fullhd is-3-widescreen is-4-desktop is-6-tablet is-12-mobile">
-                <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Resources</h3>
-                <nav class="footer-nav">
-                    <ul>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">Bulma</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">Bulma</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">Bulma</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-chevron-right"></i>
-                            <a href="#">Bulma</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
         </div>
     </div>
-    <div class="container copyright">
-        <div class="copyright-text has-text-centered">
-
-
-            Copyright © 2023 Telecall. Todos os direitos reservados.
-
+    <!--FINAL DO EMAIL PARA CONTATO-->
+    <!--FOOTER-->
+    <footer id="footer" class="mt-4">
+        <div class="container">
+            <div class="columns is-multiline is-centered">
+                <div class="column is-4-fullhd is-3-widescreen is-4-desktop is-6-tablet is-12-mobile mb-6">
+                    <a href="/src/pages/main/index.html" class="logo is-flex is-centered">
+                        <img alt="telecall" src="/src/images/telecall-nome.png" height="35" width="150">
+                    </a>
+                    <p class="subtitle is-6 footer-description">
+                        contatos: <br>
+                        Email: suporte@telecall.com <br>
+                        Tel: (21) 3030-1010
+                    </p>
+                    <div class="social-links is-flex mt-3">
+                        <a href="https://www.linkedin.com/company/telecall?originalSubdomain=br" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/TelecallBr/?locale=pt_BR" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/telecallbr/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:suporte@telecall.com" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="column is-2-widescreen is-4-desktop is-6-tablet is-12-mobile">
+                    <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Company</h3>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">About Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="column is-2-widescreen is-4-desktop is-6-tablet is-12-mobile">
+                    <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Help &amp; Resources</h3>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Knowledge Center</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Knowledge Center</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Knowledge Center</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Knowledge Center</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="column is-2-widescreen is-4-desktop is-6-tablet is-12-mobile">
+                    <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Legal</h3>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="column is-2-fullhd is-3-widescreen is-4-desktop is-6-tablet is-12-mobile">
+                    <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Resources</h3>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Bulma</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Bulma</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Bulma</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Bulma</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
+        <div class="container copyright">
+            <div class="copyright-text has-text-centered">
+
+
+                Copyright © 2023 Telecall. Todos os direitos reservados.
+
+            </div>
+        </div>
+    </footer>
     <!--FINAL DA FOOTER -->
 
     <!--PRINCIPAIS SCRIPTS-->

@@ -1,25 +1,24 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área do cliente - Telecall</title>
-    <link rel="stylesheet" href="/src/frameworks/bulma/bulma/css/bulma.css">
-    <link rel="icon" type="image/jpg" href="/src/images/Untitled.png">
-    <link rel="stylesheet" href="/src/pages/login/login.css">
-    <link rel="stylesheet" href="/src/frameworks/fontawesome/css/all.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Oficial - Telecall</title>
+    <link rel="stylesheet" href="/src/frameworks/bulma/bulma/css/bulma.css" />
+    <link rel="icon" type="image/jpg" href="/src/images/Untitled.png"">
+    <link rel="stylesheet" href="/src/pages/main/index.css"/>
+    <link rel="stylesheet" href="/src/frameworks/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="/src/frameworks/swiper/swiper/swiper-element-bundle.css">
+    <link rel="stylesheet" href="/src/frameworks/aos/aos/dist/aos.css">
+    <link rel="stylesheet" href="/src/layouts/nav.css">
     <script src="/src/js/jquery-3.7.0.js.js"></script>
-    <script src="/src/js/jquery.mask.min.js"></script>
     <script src="/src/frameworks/bulma/bulma/bulma-toast/dist/bulma-toast.min.js"></script>
-
-
+    <script src="/src/frameworks/swiper/swiper/swiper-element-bundle.min.js"></script>
+    <script src="/src/frameworks/aos/aos/dist/aos.js"></script>
 
 </head>
 
 <body>
-
+    <!--INICIO DA NAV -->
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <!--Logo / Brand-->
         <div class="navbar-brand">
@@ -143,41 +142,3 @@
         </div>
     </nav>
     <!--FINAL DA MINHA NAV-->
-
-
-    <!--COMEÇO DO MEU LOGIN-->
-    <section class="hero is-fullheight" id="divdologin">
-        <div class="hero-body is-justify-content-center is-align-items-center">
-            <div class="columns is-flex is-flex-direction-column box">
-                <div class="column">
-                    <p class="title is-3">Bem vindo a <span class="corVermelho">Telecall</span> </p>
-                    <p class="subtitle is-6" id="pCinza">Bem vindo de volta! Por favor, insira seus dados.</p>
-                    <label for="login">Login:</label>
-                    <input class="input is-danger" id="login" type="text" placeholder="Digite aqui seu login" required>
-                </div>
-                <div class="column">
-                    <label for="senha">Senha</label>
-                    <input class="input is-danger" id="senha" type="password" placeholder="Digite aqui sua senha"
-                        required>
-                    <a href="#" class="is-size-7 has-text-link">Esqueceu a senha?</a>
-                </div>
-                <div class="column">
-                    <button class="button is-fullwidth" id="entrarcor" type="button">Entrar</button>
-                </div>
-                <div class="has-text-centered">
-                    <p class="is-size-7">Não tem uma conta? <a href="/src/pages/cadastro/cadastro.html"
-                            class="has-text-link"> Inscreva-se</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <p class="subtitle is-6" id="pcop">© Telecall 2023 </p>
-    </section>
-
-
-
-    <script src="/src/js/mobilemenu.js"></script>
-    <script src="/src/js/login.js"></script>
-</body>
-
-</html>

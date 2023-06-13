@@ -1,0 +1,34 @@
+.hero.is-fullheight {
+    min-height: 50vh;
+}
+.title.is-2 {
+    font-size: 2.5rem;
+    padding-top: 102px;
+  }
+
+/*TITLES DA MINHA SECTION*/
+.alinhado{
+    text-align: center;
+    padding-bottom: 55px;
+  }
+  /*TITLES DA MINHA SECTION*/
+  .aProduct {
+    background-color: rgb(216, 22, 38);
+    color: white;
+    border-radius: 4px;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  .aProduct:hover {
+    transform: scale(1.1);
+    color: white;
+  }
+  .contact {
+    padding-top: 90px;
+  }
+  .columns.is-variable.is-8 {
+    --columnGap: 2rem;
+    padding-bottom: 100px;
+  }

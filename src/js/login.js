@@ -28,8 +28,18 @@ $("#entrarcor").click(function () {
     return;
   }
   //LOCAL STORAGE
-  localStorage.setItem("login", login);
-  localStorage.setItem("senha", senha);
-
-  window.location = "/src/pages/main/index.html";
+  if(login == localStorage.getItem("login") && senha == localStorage.getItem("senha")){
+    window.location = "/src/pages/main/index.html";
+  }
+  else{
+    bulmaToast.toast({
+      message: "Usuário inválido",
+      type: "is-link",
+      position: "bottom-center",
+      pauseOnHover: true,
+      dismissible: true,
+      closeOnClick: true,
+      opacity: 1,
+    });
+  }
 });
