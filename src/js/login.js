@@ -28,6 +28,7 @@ $("#entrarcor").click(function () {
     return;
   }
   //LOCAL STORAGE
+  
   if(login == localStorage.getItem("login") && senha == localStorage.getItem("senha")){
     window.location = "/src/pages/main/index.html";
   }
