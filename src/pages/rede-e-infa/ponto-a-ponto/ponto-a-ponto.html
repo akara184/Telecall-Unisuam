@@ -5,14 +5,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rede e infraestrutura</title>
+    <title>Ponto-a-Ponto - Telecall</title>
     <link rel="stylesheet" href="/src/frameworks/bulma/bulma/css/bulma.css" />
     <link rel="icon" type="image/jpg" href="/src/images/Untitled.png"">
-    <link rel=" stylesheet" href="/src/pages/rede-e-infa/infra.css" />
+    <link rel=" stylesheet" href="/src/pages/rede-e-infa/ponto-a-ponto/ponto-a-ponto.css" />
     <link rel="stylesheet" href="/src/frameworks/fontawesome/css/all.css" />
     <link rel="stylesheet" href="/src/frameworks/swiper/swiper/swiper-element-bundle.css">
     <link rel="stylesheet" href="/src/frameworks/aos/aos/dist/aos.css">
     <link rel="stylesheet" href="/src/layouts/nav.css">
+    <link rel="stylesheet" href="/src/layouts/bulma-pricingtable.min.css">
+    <link rel="stylesheet" href="/src/layouts/bulma-pricingtable.sass">
     <script src="/src/js/jquery-3.7.0.js.js"></script>
     <script src="/src/frameworks/bulma/bulma/bulma-toast/dist/bulma-toast.min.js"></script>
     <script src="/src/frameworks/swiper/swiper/swiper-element-bundle.min.js"></script>
@@ -20,13 +22,14 @@
 </head>
 
 <body>
+
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <!--Logo / Brand-->
         <div class="navbar-brand">
             <a class="navbar-item" id="logoid" href="/src/pages/main/index.html">
                 <img src="/src/images/telecall-logo-removebg-preview.png" alt="site logo" class="">
             </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true">
+            <a role="button" class="navbar-burger " aria-label="menu" aria-expanded="true">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -133,7 +136,7 @@
                 </div>
                 <div class="navbar-item" id="responsiveButton">
                     <div class="buttons">
-                        <a class="button is-light " id="buttonlogin" href="/src/pages/login/login.html">
+                        <a class="button is-light" id="buttonlogin" href="/src/pages/login/login.html">
                             <i class="fa-solid fa-circle-user" id="loginIcon"></i>
                             Área do cliente
                         </a>
@@ -142,102 +145,79 @@
             </div>
         </div>
     </nav>
+    <!--FINAL DA MINHA NAV-->
     <section class="hero is-fullheight">
-        <img src="/src/images/banner-infra.png" alt="">
-        <section class="section is-large">
-            <h1 class="title is-2 blue"> Transformação Digital para seu negócio</h1>
-            <div class="columns mt-5 is-8 is-variable is-centered">
-                <div class="column is-4-tablet is-3-desktop">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="card-image has-text-centered px-4">
-                                <img src="/src/images/infra.png" alt="">
-                                <p class="title is-4 blue">Ponto-a-Ponto</p>
-                            </div>
-                            <hr>
-                            <p class="title is-size-6">Acesso dedicado para ligação entre dois pontos.
-                        </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                                <a href="/src/pages/rede-e-infa/ponto-a-ponto/ponto-a-ponto.html">
-                                    <button class="button aProduct">Saiba mais</button></a>
-                            </p>
-                        </footer>
-                    </div>
-                </div>
-                <div class="column is-4-tablet is-3-desktop">
-                    <div class="card disabled">
-                        <div class="card-content">
-                            <div class="card-image has-text-centered px-4">
-                                <img src="/src/images/computacao-em-nuvem.png" alt="">
-                                <p class="title is-4 blue">MPLS</p>
-                            </div>
-                            <hr>
-                            <p class="title is-size-6">
-                                Formação de rede com
-                                protocolo MPLS.
-                            </p>
-                        </div>
-
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                                <a href="banda-larga/banda-larga.html"> <button class="button aProduct">Saiba
-                                        mais</button></a>
-                            </p>
-                        </footer>
-                    </div>
-                </div>
-                <div class="column is-4-tablet is-3-desktop">
-                    <div class="card disabled">
-                        <div class="card-content">
-                            <div class="card-image has-text-centered px-4">
-                                <img src="/src/images/fibra-otica.png" alt="">
-                                <p class="title is-4 blue">Fibra Apagada e Dutos</p>
-
-                            </div>
-                            <hr>
-                            <p class="title is-size-6">
-                                Locação privada de fibra apagada e
-                                dutos.
-                            </p>
-                        </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                                <a href="wi-fi/wi-fi.html"> <button class="button aProduct">Saiba mais</button></a>
-                            </p>
-                        </footer>
-                    </div>
-                </div>
-                <div class="column is-4-tablet is-3-desktop">
-                    <div class="card disabled">
-                        <div class="card-content">
-                            <div class="card-image has-text-centered px-4">
-                                <img src="/src/images/serv.png" alt="">
-                                <p class="title is-4 blue">Co-location</p>
-
-                            </div>
-                            <hr>
-                            <p class="title is-size-6">
-                                Locação de espaço em rack no Data Center da Telecall.
-                            </p>
-                        </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                                <a href="wi-fi/wi-fi.html"> <button class="button aProduct">Saiba mais</button></a>
-                            </p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <img src="/src/images/Ponto-a-Ponto.png" alt="">
     </section>
+
+
+
+
+    <section class="section is-large">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-10 is-offset-1">
+                    <div class="columns featured-post is-multiline">
+                        <div class="column is-12 post">
+                            <article class="columns featured">
+                                <div class="column is-7 post-img ">
+                                    <img src="/src/images/LINK-PONTO-A-PONTO.jpg" alt="">
+                                </div>
+                                <div class="column is-5 featured-content va">
+                                    <div>
+                                        <h3 class="heading post-category red">Rede </h3>
+                                        <h1 class="title post-title red">Ponto a Ponto</h1>
+                                        <p> Solução de formação de rede sezgura e de alta qualidade com tecnologia
+                                            MPLS (Multi Protocol Label Switching) que permite a priorização de
+                                            tráfego dentro da rede contratada. Os pacotes de dados trafegados na
+                                            rede são marcados com etiquetas de prioridade QoS (Quality of services).
+                                        </p><br>
+                                        <p>Ideal para empresas que necessitam de qualidade na integração de filiais
+                                            ou conexões a pontos remotos.</p>
+
+                                        <br>
+                                        <a href="#" class="button is-danger">Assine já</a>
+                                    </div>
+    </section>
+
+    <div class="pricing-table">
+        <div class="pricing-plan is-link">
+            <div class="plan-header">PLANO UNO</div>
+            <div class="plan-price"><span class="plan-price-amount"><span
+                        class="plan-price-currency">R$</span>60</span>/mensal</div>
+            <div class="plan-items">
+                <div class="plan-item">200GB Storage</div>
+                <div class="plan-item">50 Domains</div>
+                <div class="plan-item">1TB Bandwidth</div>
+                <div class="plan-item">100 Email Boxes</div>
+            </div>
+            <div class="plan-footer">
+                <button class="button is-fullwidth">Assine</button>
+            </div>
+        </div>
+
+        <div class="pricing-plan is-link">
+            <div class="plan-header">PLANO DOIS</div>
+            <div class="plan-price"><span class="plan-price-amount"><span
+                        class="plan-price-currency">R$</span>100</span>/Mensa</div>
+            <div class="plan-items">
+                <div class="plan-item">2TB Storage</div>
+                <div class="plan-item">100 Domains</div>
+                <div class="plan-item">1TB Bandwidth</div>
+                <div class="plan-item">1000 Email Boxes</div>
+            </div>
+            <div class="plan-footer">
+                <button class="button is-fullwidth">Assine</button>
+            </div>
+        </div>
+    </div>
     <!--INICIO DO EMAIL PARA CONTATO-->
     <div class="section has-background-light contact" id="contact">
         <div class="container">
             <div class="columns is-multiline" data-aos="fade-in-up" data-aos-easing="linear">
                 <div class="column is-12 about-me">
                     <h1 class="title has-text-centered section-title red">
-                        ENTRE EM CONTATO PELO EMAIL
+                        Entre em contato pelo Email
                     </h1>
                 </div>
                 <div class="column is-8 is-offset-2">
@@ -281,7 +261,8 @@
         </div>
     </div>
     <!--FINAL DO EMAIL PARA CONTATO-->
-    <!--FOOTER-->
+
+
     <!--FOOTER-->
     <footer id="footer" class="mt-4">
         <div class="container">
@@ -407,17 +388,9 @@
     </footer>
 
 
-
-
-
-
-
-
-
-
     <script src="/src/js/fade.js"></script>
     <script src="/src/js/mobilemenu.js"></script>
-    <script src="/src/js/infra.js"></script>
+    <script src="/src/js/ponto-a-ponto.js"></script>
 </body>
 
 </html>

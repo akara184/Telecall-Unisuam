@@ -56,13 +56,12 @@ color: #3850b7;
   text-align: center;
   padding-bottom: 55px;
 }
-.section.is-large {
-  padding: 0rem 0rem 3rem 6rem;
-}
-.hero.is-fullheight {
-  min-height: 80vh;
-}
 
+
+
+.hero.is-fullheight {
+  min-height: 40vh;
+}
 .aProduct {
   background-color: rgb(216, 22, 38);
   color: white;
