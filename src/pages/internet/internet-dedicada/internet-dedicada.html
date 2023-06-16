@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="/src/frameworks/fontawesome/css/all.css" />
     <link rel="stylesheet" href="/src/frameworks/aos/aos/dist/aos.css">
     <link rel="stylesheet" href="/src/layouts/nav.css">
+    <link rel="stylesheet" href="/src/layouts/acessibilidade.css">
     <script src="/src/js/jquery-3.7.0.js.js"></script>
+    <script src="/src/js/acessibilidade.js"></script>
     <script src="/src/frameworks/bulma/bulma/bulma-toast/dist/bulma-toast.min.js"></script>
     <script src="/src/frameworks/aos/aos/dist/aos.js"></script>
 </head>
@@ -125,9 +127,14 @@
 
             <div class="navbar-end">
                 <div class="navbar-item">
-                    <a href="">
-                        <ion-icon name="accessibility-sharp"></ion-icon>
-                        Acessibilidade
+                    <button id="dark-mode-toggle" aria-label="Alternar modo claro/escuro">
+                        <i class="fa-solid fa-moon"></i> 
+                    </button>&nbsp &nbsp &nbsp &nbsp
+                    <a id="zoom-in">
+                        <i class="fa-solid fa-circle-plus"></i>                    
+                    </a> &nbsp &nbsp &nbsp
+                    <a id="zoom-out">
+                        <i class="fa-solid fa-circle-minus"></i> 
                     </a>
                 </div>
                 <div class="navbar-item" id="responsiveButton">

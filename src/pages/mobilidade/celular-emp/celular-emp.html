@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="/src/layouts/bulma-pricingtable.min.css">
     <link rel="stylesheet" href="/src/layouts/bulma-pricingtable.sass">
     <link rel="stylesheet" href="/src/layouts/nav.css">
+    <link rel="stylesheet" href="/src/layouts/acessibilidade.css">
     <script src="/src/js/jquery-3.7.0.js.js"></script>
     <script src="/src/frameworks/bulma/bulma/bulma-toast/dist/bulma-toast.min.js"></script>
     <script src="/src/frameworks/swiper/swiper/swiper-element-bundle.min.js"></script>
     <script src="/src/frameworks/aos/aos/dist/aos.js"></script>
+    <script src="/src/js/acessibilidade.js"></script>
 </head>
 
 <body>
@@ -129,12 +131,16 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="navbar-end">
                     <div class="navbar-item">
-                        <a href="">
-                            <ion-icon name="accessibility-sharp"></ion-icon>
-                            Acessibilidade
+                        <button id="dark-mode-toggle" aria-label="Alternar modo claro/escuro">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>&nbsp &nbsp &nbsp &nbsp
+                        <a id="zoom-in">
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </a> &nbsp &nbsp &nbsp
+                        <a id="zoom-out">
+                            <i class="fa-solid fa-circle-minus"></i>
                         </a>
                     </div>
                     <div class="navbar-item" id="responsiveButton">
@@ -148,6 +154,7 @@
                 </div>
             </div>
         </nav>
+
         <!--FINAL DA MINHA NAV-->
 
 
@@ -264,123 +271,130 @@
         <!--FINAL DO EMAIL PARA CONTATO-->
 
 
-    <!--FOOTER-->
-    <footer id="footer" class="mt-4">
-        <div class="container">
-            <div class="columns is-multiline is-centered">
-                <div class="column is-4-fullhd is-3-widescreen is-4-desktop is-6-tablet is-12-mobile mb-6">
-                    <a href="/src/pages/main/index.html" class="logo is-flex is-centered">
-                        <img alt="telecall" src="/src/images/telecall-nome.png" height="35" width="150">
-                    </a>
-                    <p class="subtitle is-6 footer-description">
-                        contatos: <br>
-                        Email: suporte@telecall.com <br>
-                        Tel: (21) 3030-1010
-                    </p>
-                    <div class="social-links is-flex mt-3">
-                        <a href="https://www.linkedin.com/company/telecall?originalSubdomain=br" target="_blank">
-                            <i class="fab fa-linkedin"></i>
+        <!--FOOTER-->
+        <footer id="footer" class="mt-4">
+            <div class="container">
+                <div class="columns is-multiline is-centered">
+                    <div class="column is-4-fullhd is-3-widescreen is-4-desktop is-6-tablet is-12-mobile mb-6">
+                        <a href="/src/pages/main/index.html" class="logo is-flex is-centered">
+                            <img alt="telecall" src="/src/images/telecall-nome.png" height="35" width="150">
                         </a>
-                        <a href="https://www.facebook.com/TelecallBr/?locale=pt_BR" target="_blank">
-                            <i class="fab fa-facebook"></i>
+                        <p class="subtitle is-6 footer-description">
+                            contatos: <br>
+                            Email: suporte@telecall.com <br>
+                            Tel: (21) 3030-1010
+                        </p>
+                        <div class="social-links is-flex mt-3">
+                            <a href="https://www.linkedin.com/company/telecall?originalSubdomain=br" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.facebook.com/TelecallBr/?locale=pt_BR" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/telecallbr/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="mailto:suporte@telecall.com" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column is-2-widescreen is-4-desktop is-6-tablet is-12-mobile">
+                        <a href="/src/pages/internet/internet.html" <h3
+                            class="pb-1 mb-0 is-size-6 has-text-weight-bold">Internet</h3></a>
+                        <nav class="footer-nav">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-chevron-right"></i>
+                                    <a href="/src/pages/internet/internet-dedicada/internet-dedicada.html">Internet</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>
+                                    <a class="">Banda larga</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>
+                                    <a>Wi-fi</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="column is-2-widescreen is-4-desktop is-6-tablet is-12-mobile">
+                        <a href="/src/pages/telefonia/telefonia.html">
+                            <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Telefonia</h3>
                         </a>
-                        <a href="https://www.instagram.com/telecallbr/" target="_blank">
-                            <i class="fab fa-instagram"></i>
+                        <nav class="footer-nav">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-chevron-right"></i>
+                                    <a href="/src/pages/telefonia/pabx/pabx.html">PABX IP Virtual</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>
+                                    <a>Números 0800 e 40XX</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="column is-2-widescreen is-4-desktop is-6-tablet is-12-mobile">
+                        <a href="/src/pages/rede-e-infa/infra.html">
+                            <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Rede e Infraestrutura</h3>
                         </a>
-                        <a href="mailto:suporte@telecall.com" target="_blank">
-                            <i class="fa fa-envelope"></i>
+                        <nav class="footer-nav">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-chevron-right"></i>
+                                    <a href="/src/pages/rede-e-infa/ponto-a-ponto/ponto-a-ponto.html">Ponto a Ponto</a>
+                                </li>
+                                <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>
+                                <a>MPLS</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>
+                                    <a>Fibra Apagada e Dutos</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>
+                                    <a>Co-location</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="column is-2-fullhd is-3-widescreen is-4-desktop is-6-tablet is-12-mobile">
+                        <a href="/src/pages/mobilidade/mobilidade.html">
+                            <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Mobilidade</h3>
                         </a>
+                        <nav class="footer-nav">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-chevron-right"></i>
+                                    <a href="/src/pages/mobilidade/celular-emp/celular-emp.html">Celular Empresarial</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>
+                                    <a>MPLS</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>
+                                    <a>MVNA/E</a>
+                                </li>
+
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-                <div class="column is-2-widescreen is-4-desktop is-6-tablet is-12-mobile">
-                    <a href="/src/pages/internet/internet.html"<h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Internet</h3></a>
-                    <nav class="footer-nav">
-                        <ul>
-                            <li>
-                                <i class="fa fa-chevron-right"></i>
-                                <a href="/src/pages/internet/internet-dedicada/internet-dedicada.html">Internet</a>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>
-                                <a  class="">Banda larga</a>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>
-                                <a >Wi-fi</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="column is-2-widescreen is-4-desktop is-6-tablet is-12-mobile">
-                    <a href="/src/pages/telefonia/telefonia.html"><h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Telefonia</h3></a>
-                    <nav class="footer-nav">
-                        <ul>
-                            <li>
-                                <i class="fa fa-chevron-right"></i>
-                                <a href="/src/pages/telefonia/pabx/pabx.html">PABX IP Virtual</a>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>
-                                <a >Números 0800 e 40XX</a>
-                            </li>
-    
-                        </ul>
-                    </nav>
-                </div>
-                <div class="column is-2-widescreen is-4-desktop is-6-tablet is-12-mobile">
-                    <a href="/src/pages/rede-e-infa/infra.html"> <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Rede e Infraestrutura</h3></a>
-                    <nav class="footer-nav">
-                        <ul>
-                            <li>
-                                <i class="fa fa-chevron-right"></i>
-                                <a href="/src/pages/rede-e-infa/ponto-a-ponto/ponto-a-ponto.html">Ponto a Ponto</a>
-                            </li>
-                            <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>
-                                <a>MPLS</a>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>
-                                <a>Fibra Apagada e Dutos</a>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>                            
-                                <a>Co-location</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="column is-2-fullhd is-3-widescreen is-4-desktop is-6-tablet is-12-mobile">
-                    <a href="/src/pages/mobilidade/mobilidade.html"> <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Mobilidade</h3></a>
-                    <nav class="footer-nav">
-                        <ul>
-                            <li>
-                                <i class="fa fa-chevron-right"></i>
-                                <a href="/src/pages/mobilidade/celular-emp/celular-emp.html">Celular Empresarial</a>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>                            
-                                <a>MPLS</a>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-chevron-right" style="color: #cc0000;"></i>                            
-                                <a >MVNA/E</a>
-                            </li>
-    
-                        </ul>
-                    </nav>
+            </div>
+            <div class="container copyright">
+                <div class="copyright-text has-text-centered">
+
+
+                    Copyright © 2023 Telecall. Todos os direitos reservados.
+
                 </div>
             </div>
-        </div>
-        <div class="container copyright">
-            <div class="copyright-text has-text-centered">
-    
-    
-                Copyright © 2023 Telecall. Todos os direitos reservados.
-    
-            </div>
-        </div>
-    </footer>
-    
+        </footer>
+
 
 
 
