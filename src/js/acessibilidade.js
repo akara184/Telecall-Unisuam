@@ -4,7 +4,8 @@ $(document).ready(function () {
     $('.pricing-plan').toggleClass('is-black');
     $('body, .section, .hero, .card, .pricing-table, .plan-header, .plan-item, .plan-items, .plan-footer, .plan-price').toggleClass('dark-mode');
     $('.card-content, #contact, .copyright').toggleClass('has-background-dark');
-    $('title, span, p, h1, a, .title, .card-content').toggleClass('has-text-white');
+    $('title, span, p, h1, .column a , .title, .card-content').toggleClass('has-text-white');
+
     var moonIcon = $('.fa-moon');
     var islink = $(".is-link");
     if (moonIcon.length) {
@@ -41,7 +42,7 @@ $(document).ready(function () {
 
   // Manipulador de evento para diminuir o zoom
   $('#zoom-out').click(function () {
-    if (fontSize > minFontSize) {
+    if (fontSize >= minFontSize) {
       fontSize -= fontSizeIncrement;
       $('p, h1, span, input, li a').css('font-size', fontSize + 'px');
     }

@@ -6,7 +6,10 @@
   body{
     padding-top: 60px;
   }
-
+  
+  .section.is-large {
+    padding: 6rem 6rem;
+  }
 
   /* NAVBAR*/
   .navbar-item img {
@@ -28,15 +31,7 @@
   #navbarMain{
       box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1)
   }
-  @media screen and (min-width: 1024px) and (max-width: 1250px) {
-    #responsiveButton {
-      position: absolute;
-      top: auto;
-      right: 0;
-      bottom: 0;
-      transform: translateY(100%);
-    }
-  }
+
   /* FIM DA NAVBAR */
 
   /*TITLES DA MINHA SECTION*/

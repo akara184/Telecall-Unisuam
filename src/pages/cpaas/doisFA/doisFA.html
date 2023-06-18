@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mobilidade - Telecall</title>
+    <title>2FA - Telecall</title>
     <link rel="stylesheet" href="/src/frameworks/bulma/bulma/css/bulma.css" />
     <link rel="icon" type="image/jpg" href="/src/images/Untitled.png"">
-    <link rel=" stylesheet" href="/src/pages/mobilidade/mobilidade.css" />
+    <link rel=" stylesheet" href="/src/pages/cpaas/doisFA/doisFA.css" />
     <link rel="stylesheet" href="/src/frameworks/fontawesome/css/all.css" />
-    <link rel="stylesheet" href="/src/frameworks/swiper/swiper/swiper-element-bundle.css">
     <link rel="stylesheet" href="/src/frameworks/aos/aos/dist/aos.css">
     <link rel="stylesheet" href="/src/layouts/nav.css">
     <link rel="stylesheet" href="/src/layouts/acessibilidade.css">
     <script src="/src/js/jquery-3.7.0.js.js"></script>
     <script src="/src/frameworks/bulma/bulma/bulma-toast/dist/bulma-toast.min.js"></script>
-    <script src="/src/frameworks/swiper/swiper/swiper-element-bundle.min.js"></script>
     <script src="/src/frameworks/aos/aos/dist/aos.js"></script>
     <script src="/src/js/acessibilidade.js"></script>
 
 </head>
 
 <body>
+    <!--INICIO DA NAV -->
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <!--Logo / Brand-->
         <div class="navbar-brand">
             <a class="navbar-item" id="logoid" href="/src/pages/main/index.html">
                 <img src="/src/images/telecall-logo-removebg-preview.png" alt="site logo" class="">
             </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true">
+            <a role="button" class="navbar-burger " aria-label="menu" aria-expanded="true">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -127,6 +126,7 @@
                 </div>
             </div>
 
+
             <div class="navbar-end">
                 <div class="navbar-item">
                     <button id="dark-mode-toggle" aria-label="Alternar modo claro/escuro">
@@ -150,61 +150,87 @@
             </div>
         </div>
     </nav>
+    <!--FINAL DA MINHA NAV-->
 
-
-    <!--FINAL DA SECTION-->
     <section class="hero is-fullheight">
-        <img src="/src/images/MOBILIDADE.png" alt="">
+        <img src="/src/images/banner-2fa.png" alt="">
     </section>
-
+    <!--PRIMEIRA SECTION-->
     <section class="section is-large">
-        <h1 class="title is-2 blue">Serviços de Mobilidade</h1>
-        <div class="columns mt-5 is-8 is-variable is-centered">
-            <div class="column is-4-tablet is-3-desktop">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="card-image has-text-centered px-4">
-                            <img src="/src/images/smartphone.png" alt="">
-                            <p class="title is-4 blue"> Celular Empresarial </p>
-                        </div>
-                        <hr>
-                        <p class="subtitle is-size-6 blue">
-                        Monte <span class="red">planos de celular personalizados</span> para a sua <span
-                            class="red">empresa</span>.</p>
-                    </div>
-                    <footer class="card-footer">
-                        <p class="card-footer-item">
-                            <a href="/src/pages/mobilidade/celular-emp/celular-emp.html">
-                                <button class="button aProduct">Saiba mais</button></a>
-                        </p>
-                    </footer>
+        <h1 class="title is-2 blue alinhado"> <span class="red"> Two-Factor Authentication </span> <br>
+            Autenticação de dois fatores</h1>
+        <div class="container">
+            <div class="columns">
+                <div class="column is-10 is-offset-1">
+                    <div class="columns featured-post is-multiline">
+                        <div class="column is-12 post">
+                            <article class="columns featured">
+                                <div class="column is-7 post-img ">
+                                    <img src="/src/images/2faimage.avif" alt="">
+                                </div>
+                                <div class="column is-5 featured-content va">
+                                    <div>
+                                        <h3 class="heading post-category red">2FA</h3>
+                                        <h1 class="title post-title red">2FA: O que é?</h1>
+                                        <p class="subtitle post-excerpt is-6 blue">O <span class="red">2FA</span>, ou
+                                            autenticação de dois fatores, é uma medida de <span class="red">segurança
+                                                crucial</span> para proteger contas online. Ele requer <span
+                                                class="red">dois fatores únicos</span> para acessar uma conta, como
+                                            <span class="red">senha</span> e um segundo fator como <span
+                                                class="red">código de autenticação</span> gerado por um aplicativo ou
+                                            enviado via <span class="red">SMS</span>. Esse segundo fator adicional
+                                            dificulta o acesso não autorizado, mesmo que a senha seja comprometida. Ao
+                                            ativar o 2FA em contas que suportam essa funcionalidade, os usuários
+                                            fortalecem a segurança e reduzem significativamente o risco de invasões e
+                                            roubo de informações pessoais.
+                                            <br> <br>
+                                            Existem diferentes métodos de segundo fator, incluindo <span
+                                                class="red">aplicativos de autenticação</span>, como o <span
+                                                class="red">Google Authenticator</span>, que geram códigos temporários,
+                                            e o uso de <span class="red">SMS</span> para receber um código de
+                                            verificação. Além disso, a <span class="red">biometria</span>, como <span
+                                                class="red">impressão digital</span> ou <span class="red">reconhecimento
+                                                facial</span>, também pode ser utilizada como segundo fator. Ao adotar o
+                                            <span class="red">2FA</span>, os usuários adicionam uma camada extra de
+                                            segurança às suas contas online, protegendo-as de forma mais eficaz contra
+                                            ameaças cibernéticas e garantindo a integridade de seus dados pessoais.
+                                    </div>
+    </section>
+
+    <!-- Begin About Me Section -->
+    <div class="section-light " id="about-me">
+        <div class="container">
+            <div class="column is-12 about-me">
+                <h1 class="title has-text-centered section-title blue">Benefícios</h1>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-6 has-vertically-aligned-content" data-aos="fade-right">
+
+                    <p class="blue">
+                        • Ofereça  <span class="red">segurança aprimorada </span> para seus clientes. <br> <br>
+                        • API simples e de  <span class="red">rápida implementação.</span> <br> <br>
+                        • Envio de OTP por meio de vários canais, incluindo SMS, voz ou e-mail. <br> <br>
+                        • <span class="red">Flexibilidade</span> de canais garante que o usuário conseguirá completar a tarefa desejada
+                        mesmo quando tiver problema com um deles. Exemplo: Enviar OTP por SMS, em caso de
+                        falha, enviar OTP por chamada de voz, em caso de outra falha, enviar por e-mail. <br> <br>
+                        • Reduza casos de <span class="red">fraude e invasões</span> e evite o acesso a dados por invasores. <br> <br>
+                        • <span class="red">Plataforma intuitiva</span> que permite visualizar relatórios de uso por dia, mês ou ano e
+                        pesquisar usando diversos critérios de filtro.
+                    </p>
+                    <br />
+                    <div class="is-divider"></div>
+                </div>
+                <div class="column is-6 right-image " data-aos="fade-left">
+                    <img class="is-rounded" src="/src/images/2faa.gif" alt="" />
                 </div>
             </div>
-            <div class="column is-4-tablet is-3-desktop">
-                <div class="card disabled">
-                    <div class="card-content">
-                        <div class="card-image has-text-centered px-4">
-                            <img src="/src/images/sim-de-telefone.png" alt="">
-                            <p class="title is-4 blue"> MVNA/E </p>
-                        </div>
-                        <hr>
-                        <p class="subtitle is-size-6 blue">
-                            Sua <span class="red">empresa</span> operando no mercado móvel com a <span class="red">melhor cobertura</span> do Brasil.
-                        </p>
-                    </div>
-
-                    <footer class="card-footer">
-                        <p class="card-footer-item">
-                            <a href="banda-larga/banda-larga.html"> <button class="button aProduct">Saiba
-                                    mais</button></a>
-                        </p>
-                    </footer>
-                </div>
-            </div>
-
         </div>
-    </section>
-    </section>
+    </div>
+
+
+
+
+    <!--FIM DA PRIMEIRA SECTION-->
     <!--INICIO DO EMAIL PARA CONTATO-->
     <div class="section has-background-light contact" id="contact">
         <div class="container">
@@ -380,7 +406,7 @@
         </div>
     </footer>
 
-
+    <!--PRINCIPAIS SCRIPTS-->
     <script src="/src/js/fade.js"></script>
     <script src="/src/js/mobilemenu.js"></script>
 </body>
