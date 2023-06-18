@@ -4,7 +4,7 @@ $(document).ready(function () {
     $('.pricing-plan').toggleClass('is-black');
     $('body, .section, .hero, .card, .pricing-table, .plan-header, .plan-item, .plan-items, .plan-footer, .plan-price').toggleClass('dark-mode');
     $('.card-content, #contact, .copyright').toggleClass('has-background-dark');
-    $('title, span, p, h1, .column a , .title, .card-content').toggleClass('has-text-white');
+    $('title, span, p, h1, .column a, .title, .card-content').toggleClass('has-text-white');
 
     var moonIcon = $('.fa-moon');
     var islink = $(".is-link");
