@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="has-navbar-fixed-top">
+<html lang="pt-BR" class="has-navbar-fixed-top"> <!--A framwork BULMA na docuentação sugere essa classe na tag HTML. -->
 
 <head>
     <meta charset="UTF-8">
@@ -10,13 +10,16 @@
     <link rel="icon" type="image/jpg" href="/src/images/Untitled.png">
     <link rel="stylesheet" href="/src/pages/cadastro/cadastro.css">
     <link rel="stylesheet" href="/src/frameworks/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/src/layouts/acessibilidade.css">
     <script src="/src/js/jquery-3.7.0.js.js"></script>
     <script src="/src/js/jquery.mask.min.js"></script>
     <script src="/src/frameworks/bulma/bulma/bulma-toast/dist/bulma-toast.min.js"></script>
+    <script src="/src/js/acessibilidade.js"></script>
 
 </head>
 
 <body>
+    <!--INICIO DA NAVBAR-->
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <!--Logo / Brand-->
         <div class="navbar-brand">
@@ -120,9 +123,14 @@
                     </div>
                 </div>
             </div>
-
             <div class="navbar-end">
                 <div class="navbar-item">
+                    <a id="zoom-in">
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </a> &nbsp &nbsp &nbsp
+                    <a id="zoom-out">
+                        <i class="fa-solid fa-circle-minus"></i>
+                    </a>
                 </div>
                 <div class="navbar-item" id="responsiveButton">
                     <div class="buttons">
@@ -167,11 +175,12 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" id="nomeMaterno" type="text" placeholder="Digite seu nome completo"
+                                <input class="input" id="nomeMaterno" type="text" placeholder="Digite seu nome materno"
                                     required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-user"></i>
                                 </span>
+                                
                         </div>
                     </div>
                 </div>
@@ -185,6 +194,8 @@
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-calendar"></i>
                                 </span>
+                                <p class="help is-link">O campo data é no formato Americano: <span class="exatamente">MÊS/DIA/ANO </span></p>
+                            </p>
                             </p>
                         </div>
                     </div>
@@ -331,8 +342,8 @@
             </div>
         </div>
         <p class="subtitle is-6" id="pcop">© Telecall 2023 </p>
-
     </section>
+    <!--FINAL DO CADASTRO-->
 
 
 

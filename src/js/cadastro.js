@@ -1,10 +1,11 @@
-//VALIDAÇÃO DO MEU CADASTRO
+//NÚMEROS JÁ PRÉ DEFINIDO O FORMATO
 $(document).ready(function () {
   $("#cpf").mask("000.000.000-00");
   $("#tell1").mask("(+55)00-000000000");
   $("#tell2").mask("(+55)00-00000000");
 });
 
+//Validação do formulário
 $("#idcadastro").click(function () {
   var nome = $("#nome").val();
   var nomeMaterno = $("#nomeMaterno").val();
@@ -56,6 +57,7 @@ $("#idcadastro").click(function () {
 
     return;
   } else if (sexo == "Selecione") {
+    $("#sexo").focus();
     bulmaToast.toast({
       message: "Selecione um sexo",
       type: "is-link",
@@ -65,9 +67,9 @@ $("#idcadastro").click(function () {
       closeOnClick: true,
       opacity: 1,
     });
-    $("#sexo").focus();
     return;
   } else if (cpf.length < 14) {
+    $("#cpf").focus();
     bulmaToast.toast({
       message: "Insira um CPF no formato: EX:000.000.000-00",
       type: "is-link",
@@ -77,9 +79,9 @@ $("#idcadastro").click(function () {
       closeOnClick: true,
       opacity: 1,
     });
-    $("#cpf").focus();
     return;
   } else if (!tell1.match(/^\(\+55\)\d{2}-\d{9}$/)) {
+    $("#tell1").focus();
     bulmaToast.toast({
       message: "Insira um telefone celular no formato: EX: (+55)XX-XXXXXXXXX",
       type: "is-link",
@@ -89,9 +91,9 @@ $("#idcadastro").click(function () {
       closeOnClick: true,
       opacity: 1,
     });
-    $("#tell1").focus();
     return;
   } else if (!tell2.match(/^\(\+55\)\d{2}-\d{8}$/)) {
+    $("#tell2").focus();
     bulmaToast.toast({
       message: "Insira um telefone fixo no formato: EX: (+55)XX-XXXXXXXX",
       type: "is-link",
@@ -101,9 +103,9 @@ $("#idcadastro").click(function () {
       closeOnClick: true,
       opacity: 1,
     });
-    $("#tell2").focus();
     return;
   } else if (endereco == "") {
+    $("#endereco").focus();
     bulmaToast.toast({
       message: "O endereço é obrigatório",
       type: "is-link",
@@ -113,9 +115,9 @@ $("#idcadastro").click(function () {
       closeOnClick: true,
       opacity: 1,
     });
-    $("#endereco").focus();
     return;
   } else if (!login.match(/^[a-zA-Z]{6}$/)) {
+    $("#login").focus();
     bulmaToast.toast({
       message: "O campo Login deve ter exatamente 6 caracteres alfabéticos.",
       type: "is-link",
@@ -125,9 +127,9 @@ $("#idcadastro").click(function () {
       closeOnClick: true,
       opacity: 1,
     });
-    $("#login").focus();
     return;
   } else if (!senha1.match(/^[a-zA-Z]{8}$/)) {
+    $("#senha1").focus();
     bulmaToast.toast({
       message: "O campo Senha deve ter 8 caracteres alfabéticos",
       type: "is-link",
@@ -137,9 +139,9 @@ $("#idcadastro").click(function () {
       closeOnClick: true,
       opacity: 1,
     });
-    $("#senha1").focus();
     return;
   } else if (!senha2.match(/^[a-zA-Z]{8}$/)) {
+    $("#senha2").focus();
     bulmaToast.toast({
       message: "O campo Senha deve ter 8 caracteres alfabéticos.",
       type: "is-link",
@@ -149,7 +151,6 @@ $("#idcadastro").click(function () {
       closeOnClick: true,
       opacity: 1,
     });
-    $("#senha2").focus();
     return;
   } else if (senha1 !== senha2) {
     bulmaToast.toast({

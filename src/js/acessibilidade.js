@@ -1,3 +1,4 @@
+//MODO ESCURO
 $(document).ready(function () {
   $('#dark-mode-toggle').click(function () {
     $('body, .navbar, .section, .card-content').toggleClass('is-dark');
@@ -36,7 +37,7 @@ $(document).ready(function () {
   $('#zoom-in').click(function () {
     if (fontSize < 34) {
       fontSize += fontSizeIncrement;
-      $('p, h1, span, input, li a').css('font-size', fontSize + 'px');
+      $('p, h1, span, input, li a, .plan-header, .plan-item, .plan-price-amount').css('font-size', fontSize + 'px');
     }
   });
 
@@ -44,7 +45,7 @@ $(document).ready(function () {
   $('#zoom-out').click(function () {
     if (fontSize >= minFontSize) {
       fontSize -= fontSizeIncrement;
-      $('p, h1, span, input, li a').css('font-size', fontSize + 'px');
+      $('p, h1, span, input, li a, .plan-header, .plan-item, .plan-price-amount').css('font-size', fontSize + 'px');
     }
   });
 });

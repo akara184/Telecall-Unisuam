@@ -1,3 +1,4 @@
+//VERIFICAÇÃO AO CLICAR NO BUTTON
 $("#entrarcor").click(function () {
   var login = $("#login").val();
   var senha = $("#senha").val();

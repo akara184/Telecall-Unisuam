@@ -3,12 +3,13 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background-image: url("/src/images/whiteandred.jpg");
   background-size: cover;
   background-attachment: fixed;
-  
-}  
+
+}
 
 
 .navbar-item img {
@@ -19,6 +20,7 @@ body {
   background-color: rgb(216, 22, 38);
   color: whitesmoke;
 }
+
 #loginIcon {
   padding-right: 8px;
 }
@@ -32,43 +34,46 @@ body {
     transform: translateY(100%);
   }
 }
+
 @media screen and (min-width: 1024px) {
-  #logoid{
+  #logoid {
     box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1)
   }
 }
 
-#navbarMain{
-    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1)
+#navbarMain {
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1)
 }
+
 /*COMEÇO DA MINHA FORM*/
 
-.corVermelho{
-  color: rgb(216, 22, 38) ;
+.corVermelho {
+  color: rgb(216, 22, 38);
 }
 
-#pCinza{
-  color:#7c7979;
+#pCinza {
+  color: #7c7979;
 }
 
 
-#idcadastro{
+#idcadastro {
   background-color: rgb(216, 22, 38);
   color: whitesmoke;
 }
 
-.exatamente{
+.exatamente {
   color: red;
   text-decoration: underline;
 }
 
 
-#pcop{
+#pcop {
   color: rgba(0, 0, 0, 0.6);
   padding-left: 15px;
   padding-bottom: 10px;
 }
-.disabled{
+
+.disabled {
   pointer-events: none;
   cursor: default;
   background-color: rgba(95, 92, 92, 0.267);
