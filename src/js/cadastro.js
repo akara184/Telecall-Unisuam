@@ -2,7 +2,7 @@
 $(document).ready(function () {
   $("#cpf").mask("000.000.000-00");
   $("#tell1").mask("(+55)00-000000000");
-  $("#tell2").mask("(+55)00-000000000");
+  $("#tell2").mask("(+55)00-00000000");
 });
 
 $("#idcadastro").click(function () {
@@ -91,9 +91,9 @@ $("#idcadastro").click(function () {
     });
     $("#tell1").focus();
     return;
-  } else if (!tell2.match(/^\(\+55\)\d{2}-\d{9}$/)) {
+  } else if (!tell2.match(/^\(\+55\)\d{2}-\d{8}$/)) {
     bulmaToast.toast({
-      message: "Insira um telefone fixo no foromato: EX: (+55)XX-XXXXXXXXX",
+      message: "Insira um telefone fixo no formato: EX: (+55)XX-XXXXXXXX",
       type: "is-link",
       position: "center",
       pauseOnHover: true,

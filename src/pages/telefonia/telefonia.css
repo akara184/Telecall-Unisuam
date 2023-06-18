@@ -1,17 +1,18 @@
 .hero.is-fullheight {
     min-height: 50vh;
 }
+/*TITLES DA MINHA SECTION*/
 .title.is-2 {
     font-size: 2.5rem;
     padding-top: 102px;
   }
 
-/*TITLES DA MINHA SECTION*/
 .alinhado{
     text-align: center;
     padding-bottom: 55px;
   }
-  /*TITLES DA MINHA SECTION*/
+/*TITLES DA MINHA SECTION*/
+/* COR DO BOTÃO*/
   .aProduct {
     background-color: rgb(216, 22, 38);
     color: white;
@@ -28,7 +29,4 @@
   .contact {
     padding-top: 90px;
   }
-  .columns.is-variable.is-8 {
-    --columnGap: 2rem;
-    padding-bottom: 100px;
-  }
+/*COR DO BOTÃO*/
