@@ -163,7 +163,7 @@ $("#idcadastro").click(function () {
       opacity: 1,
     });
     return;
-  } else {
+  }else {
     bulmaToast.toast({
       message: "USUÁRIO CRIADO COM SUCESSO",
       type: "is-success",
@@ -178,6 +178,6 @@ $("#idcadastro").click(function () {
     localStorage.setItem("login", login);
     localStorage.setItem("senha", senha1);
     
-    window.location.href = "/src/pages/login/login.html";
+    window.location.href = "../../pages/login/login.html";
   }
 });

@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("/src/images/whiteandred.jpg");
+  background-image: url("../../images/whiteandred.jpg");
   background-size: cover;
   background-attachment: fixed;
 
