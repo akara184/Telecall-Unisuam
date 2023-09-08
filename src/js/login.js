@@ -1,7 +1,7 @@
 //VERIFICAÇÃO AO CLICAR NO BUTTON
 $("#entrar").click(function () {
-  var login = $("#idlogin").val();
-  var senha = $("#idsenha").val();
+  var login = $("#login").val();
+  var senha = $("#senha").val();
 
   if (login == "") {
     $("#login").focus();

@@ -56,6 +56,10 @@ body {
     background-color: rgb(216, 22, 38);
     color: whitesmoke;
 }
+.entrarcor:hover{
+  background-color: rgb(216, 22, 38);
+  color: whitesmoke;
+}
 
 
 #pcop{
