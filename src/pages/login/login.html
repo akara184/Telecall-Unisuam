@@ -147,6 +147,8 @@
 
 
     <!--COMEÇO DO MEU LOGIN-->
+
+    <form action="">
     <section class="hero is-fullheight" id="divdologin">
         <div class="hero-body is-justify-content-center is-align-items-center">
             <div class="columns is-flex is-flex-direction-column box">
@@ -154,16 +156,21 @@
                     <p class="title is-3">Bem vindo a <span class="corVermelho">Telecall</span> </p>
                     <p class="subtitle is-6" id="pCinza">Bem vindo de volta! Por favor, insira seus dados.</p>
                     <label for="login">Login:</label>
-                    <input class="input is-danger" id="login" type="text" placeholder="Digite aqui seu login" required>
+                    <input class="input is-danger" id="login" name="login" type="text" placeholder="Digite aqui seu login" required>
                 </div>
                 <div class="column">
                     <label for="senha">Senha</label>
-                    <input class="input is-danger" id="senha" type="password" placeholder="Digite aqui sua senha"
+                    <input class="input is-danger" id="senha" name="senha" type="password" placeholder="Digite aqui sua senha"
                         required>
                     <a href="#" class="is-size-7 has-text-link">Esqueceu a senha?</a>
                 </div>
-                <div class="column">
-                    <button class="button is-fullwidth" id="entrarcor" type="button">Entrar</button>
+                <div class="field is-grouped">
+                    <div class="column">
+                        <button class="button is-fullwidth is-medium entrarcor" id="entrar" type="submit">Entrar</button>
+                    </div>
+                    <div class="column">
+                        <button class="button is-medium  is-fullwidth entrarcor" id="limpar" type="reset">Resetar</button>
+                    </div>
                 </div>
                 <div class="has-text-centered">
                     <p class="is-size-7">Não tem uma conta? <a href="../../pages/cadastro/cadastro.html"
@@ -174,6 +181,7 @@
         </div>
         <p class="subtitle is-6" id="pcop">© Telecall 2023 </p>
     </section>
+</form>
     <!--FINAL DO LOGIN-->
 
 
