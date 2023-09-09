@@ -1,4 +1,4 @@
-//VERIFICAÇÃO AO CLICAR NO BUTTON
+//VERIFICAÇÃO AO CLICAR NO BUTTON ENTRAR
 $("#entrar").click(function () {
   var login = $("#login").val();
   var senha = $("#senha").val();
@@ -31,7 +31,7 @@ $("#entrar").click(function () {
   //LOCAL STORAGE
   
   if(login == localStorage.getItem("login") && senha == localStorage.getItem("senha")){
-    window.location = "../../pages/main/index.html";
+    window.location = "../../views/main/index.php";
   }
   else{
     bulmaToast.toast({
@@ -45,3 +45,4 @@ $("#entrar").click(function () {
     });
   }
 });
+

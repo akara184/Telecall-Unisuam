@@ -178,6 +178,6 @@ $("#cadastro").click(function () {
     localStorage.setItem("login", login);
     localStorage.setItem("senha", senha);
     
-    window.location.href = "../../pages/login/login.html";
+    window.location.href = "../../views/login/login.php";
   }
 });
