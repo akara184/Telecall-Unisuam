@@ -17,6 +17,12 @@
     <script src="../../js/acessibilidade.js"></script>
 </head>
 
+
+<?php 
+    include_once '../../nav.php';
+?> 
+
+
 <body>
     <!--INICIO DA NAVBAR-->
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">

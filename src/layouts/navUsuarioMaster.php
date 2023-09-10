@@ -136,17 +136,22 @@
                     </a> &nbsp &nbsp &nbsp
                     <a id="zoom-out">
                         <i class="fa-solid fa-circle-minus"></i>
-                    </a>
-                </div>
-                <div class="navbar-item has-dropdown" id="responsiveButton">
-                    <div class="buttons navbar-item">
+                    </a>&nbsp &nbsp &nbsp &nbsp
+                    <div class="navbar-item has-dropdown is-hoverable">
                         <a class="button is-light" id="buttonlogin">
-                            <i class="fa-solid fa-circle-user" id="loginIcon"></i>
-                            Área do cliente
+                        <i class="fa-solid fa-address-card"></i>&nbsp 
+                            Admin Master
                         </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item is-danger" href="#">
+                                <i class="fas fa-sign-out-alt"></i> &nbsp
+                                Sair
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
     </nav>

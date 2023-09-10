@@ -130,23 +130,28 @@
                 <div class="navbar-item">
                     <button id="dark-mode-toggle" aria-label="Alternar modo claro/escuro">
                         <i class="fa-solid fa-moon"></i>
-                    </button>&nbsp &nbsp &nbsp &nbsp
-                    <a id="zoom-in">
+                    </button>&nbsp &nbsp &nbsp &nbsp 
+                    <a id="zoom-in"> 
                         <i class="fa-solid fa-circle-plus"></i>
                     </a> &nbsp &nbsp &nbsp
                     <a id="zoom-out">
                         <i class="fa-solid fa-circle-minus"></i>
-                    </a>
-                </div>
-                <div class="navbar-item has-dropdown" id="responsiveButton">
-                    <div class="buttons navbar-item">
+                    </a>&nbsp &nbsp &nbsp &nbsp
+                    <div class="navbar-item has-dropdown is-hoverable">
                         <a class="button is-light" id="buttonlogin">
                             <i class="fa-solid fa-circle-user" id="loginIcon"></i>
-                            Área do cliente
+                           Davi Anderson 
                         </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item is-danger" href="#"> 
+                            <i class="fas fa-sign-out-alt"></i>  &nbsp 
+                                Sair
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
     </nav>
