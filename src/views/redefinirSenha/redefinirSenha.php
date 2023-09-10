@@ -8,7 +8,7 @@
     <title>Área do cliente - Telecall</title>
     <link rel="stylesheet" href="../../framework/bulma/bulma/css/bulma.css">
     <link rel="icon" type="image/jpg" href="../../images/Untitled.png">
-    <link rel="stylesheet" href="../../views/login/login.css">
+    <link rel="stylesheet" href="../../views/redefinirSenha/redefinirSenha.css">
     <link rel="stylesheet" href="../../vendors/fontawesome/css/all.css">
     <link rel="stylesheet" href="../../layouts/acessibilidade.css">
     <script src="../../js/jquery-3.7.0.js.js"></script>
@@ -160,27 +160,36 @@
             <div class="columns is-flex is-flex-direction-column box">
                 <div class="column">
                     <p class="title is-3">Bem vindo a <span class="corVermelho">Telecall</span> </p>
-                    <p class="subtitle is-6" id="pCinza">Bem vindo de volta! Por favor, insira seus dados.</p>
+                    <p class="subtitle is-6" id="pCinza">Olá novamente! Para garantir sua segurança, por favor,<br> forneça seus dados para a troca de senha.</p>
                     <label for="login">Login:</label>
                     <input class="input is-danger" id="login" name="login" type="text" placeholder="Digite aqui seu login" required>
                 </div>
                 <div class="column">
-                    <label for="senha">Senha</label>
+                    <label for="senha">Antiga senha:</label>
                     <input class="input is-danger" id="senha" name="senha" type="password" placeholder="Digite aqui sua senha"
                         required>
-                    <a href="../../views/redefinirSenha/redefinirSenha.php" class="is-size-7 has-text-link">Alterar senha?</a>
+                    <a href="../../views/recuperarSenha/recuperarSenha.php" class="is-size-7 has-text-link"></a>
+                </div>
+                <div class="column">
+                    <label for="senha">Nova senha:</label>
+                    <input class="input is-danger" id="novaSenha" name="novaSenha" type="password" placeholder="Digite aqui sua senha"
+                        required>
+                    <a href="../../views/recuperarSenha/recuperarSenha.php" class="is-size-7 has-text-link"></a>
+                </div>
+                <div class="column">
+                    <label for="senha">Confirme nova senha:</label>
+                    <input class="input is-danger" id="confirmeNovaSenha" name="cofirmeNovaSenha" type="password" placeholder="Digite aqui sua senha"
+                        required>
+                    <a href="../../views/recuperarSenha/recuperarSenha.php" class="is-size-7 has-text-link"></a>
                 </div>
                 <div class="field is-grouped">
                     <div class="column">
-                        <button class="button is-fullwidth is-medium entrarcor" id="entrar" type="button">Entrar</button>
-                    </div>
-                    <div class="column">
-                        <button class="button is-medium  is-fullwidth entrarcor" id="reset" type="reset">Resetar</button>
+                        <button class="button is-fullwidth is-medium entrarcor" id="redefinir" type="button">Redefinir</button>
                     </div>
                 </div>
                 <div class="has-text-centered">
                     <p class="is-size-7">Não tem uma conta? <a href="../../views/cadastro/cadastro.php"
-                            class="has-text-link">Inscreva-se</a>
+                            class="has-text-link"> Inscreva-se</a>
                     </p>
                 </div>
             </div>
@@ -192,7 +201,7 @@
 
 
     <script src="../../js/mobilemenu.js"></script>
-    <script src="../../js/login.js"></script>
+    <script src="../../js/redefinirSenha.js"></script>
 </body>
 
 </html>

@@ -139,7 +139,7 @@
                     </a>&nbsp &nbsp &nbsp &nbsp
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="button is-light" id="buttonlogin">
-                            <i class="fa-solid fa-circle-user" id="loginIcon"></i>
+                        <i class="fa-solid fa-house-user"></i>&nbsp
                            Davi Anderson 
                         </a>
                         <div class="navbar-dropdown">
