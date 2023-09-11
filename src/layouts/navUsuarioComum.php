@@ -147,8 +147,15 @@
                             <i class="fas fa-sign-out-alt"></i>  &nbsp 
                                 Sair
                             </a>
+                            <a class="navbar-item is-danger" href="#"> 
+                            <i class="fa-solid fa-lock"></i>  &nbsp 
+                                Alterar senha
+                            </a>
                         </div>
+                        
+                        
                     </div>
+                    
                 </div>
             </div>
         </div>

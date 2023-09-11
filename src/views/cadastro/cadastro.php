@@ -149,7 +149,7 @@
 
     <!--INICIO DO MEU CADASTRO-->
 
-    <form action="" method="post">
+    <form action="../../views/login/login.php" method="post">
         <section class="hero is-fullheight ">
             <div class="hero-body is-justify-content-center">
                 <div class="columns is-flex is-flex-direction-column box">
@@ -208,7 +208,7 @@
                             <div class="field">
                                 <p class="control">
                                 <div class="select">
-                                    <select id="sexo">
+                                    <select id="sexo" name="sexo">
                                         <option>Selecione</option>
                                         <option>Masculino</option>
                                         <option>Feminino</option>
@@ -337,11 +337,11 @@
                     </div>
                     <div class="field is-grouped">
                         <div class="column">
-                            <button class="button is-fullwidth is-medium" id="cadastro" type="button"
+                            <button class="button is-fullwidth is-medium" name="cadastro" id="cadastro" type="button"
                                 value="Submit input">Cadastre-se</button>
                         </div>
                         <div class="column">
-                            <button class="button is-fullwidth is-medium" id="cadastro" type="reset"
+                            <button class="button is-fullwidth is-medium" id="resetar" type="reset"
                                 value="Submit input">Resetar formulário</button>
                         </div>
                     </div>

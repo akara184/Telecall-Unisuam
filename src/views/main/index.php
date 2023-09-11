@@ -1,3 +1,5 @@
+<?$conexao = include_once('../../controller/bd.php');?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -22,7 +24,7 @@
 </head>
 
 <body>
- 
+ <!--Teste!-->
 <?php 
    $head =  include_once '../../layouts/nav.php';
 ?> 
