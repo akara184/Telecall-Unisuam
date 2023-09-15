@@ -1,5 +1,5 @@
 # Telecall-Unisuam
-Projeto frontend
+Projeto Web - BackEnd e FrontEnd
 
 
 Grupo composto por:
