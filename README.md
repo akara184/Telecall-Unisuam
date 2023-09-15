@@ -3,6 +3,7 @@ Projeto frontend
 
 
 Grupo composto por:
+<br>
 Davi Anderson de Oliveira Menezes Junior
 <br>
 Filipe Diego da Silva Luiz
