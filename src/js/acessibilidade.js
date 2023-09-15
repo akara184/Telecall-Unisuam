@@ -12,12 +12,12 @@ $(document).ready(function () {
     if (moonIcon.length) {
       moonIcon.removeClass('fa-moon').addClass('fa-sun');
       islink.removeClass('is-link').addClass('is-black');
-      $('#logoid img').attr('src', '../../../src/images/telecall-branco.png');
+      $('#logoid img').attr('src', '../../../src/images/telecall-branco.png'); // trocar logo para branco
 
     } else {
       $('.fa-sun').removeClass('fa-sun').addClass('fa-moon');
       $(".is-black").removeClass("is-black").addClass("is-link");
-      $('#logoid img').attr('src', '../../../src/images/telecall-logo-removebg-preview.png');
+      $('#logoid img').attr('src', '../../../src/images/telecall-logo-removebg-preview.png'); // trocar logo para branco
     }
   });
 });

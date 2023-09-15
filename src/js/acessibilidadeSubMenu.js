@@ -1,3 +1,6 @@
+//A criação do JS acessibilidade para sub menus foi criada para atender diretorios que só funcionam com submenus.
+//Pois os diretorios do submenus são diferente dos outros, assim criando uma regra para somente eles
+
 //MODO ESCURO
 $(document).ready(function () {
     $('#dark-mode-toggle').click(function () {
@@ -11,12 +14,12 @@ $(document).ready(function () {
       var islink = $(".is-link");
       if (moonIcon.length) {
         moonIcon.removeClass('fa-moon').addClass('fa-sun');
-        $('#logoid img').attr('src', '../../../../src/images/telecall-branco.png');
+        $('#logoid img').attr('src', '../../../../src/images/telecall-branco.png'); //trocar logo para branca
         islink.removeClass('is-link').addClass('is-black');
   
       } else {
         $('.fa-sun').removeClass('fa-sun').addClass('fa-moon');
-        $('#logoid img').attr('src', '../../../../src/images/telecall-logo-removebg-preview.png');
+        $('#logoid img').attr('src', '../../../../src/images/telecall-logo-removebg-preview.png'); // trocar logo para branca
         $(".is-black").removeClass("is-black").addClass("is-link");
       }
     });

@@ -1,3 +1,5 @@
+<?include_once('../../controller/bd.php')?>
+
 <!DOCTYPE html>
 <html lang="pt-BR" class="has-navbar-fixed-top">
 <!--A framwork BULMA na documentação sugere essa classe na tag HTML. -->

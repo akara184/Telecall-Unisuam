@@ -26,7 +26,7 @@
 <body>
  <!--Teste!-->
 <?php 
-   $head =  include_once '../../layouts/nav.php';
+   $head =  include_once '../../includes/nav.php';
 ?> 
     <!--FINAL DA MINHA NAV-->
     <!--MEU SLIDE-->
