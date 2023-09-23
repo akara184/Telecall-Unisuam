@@ -1,4 +1,4 @@
-//MODO ESCURO
+//MODO ESCUROO
 $(document).ready(function () {
   $('#dark-mode-toggle').click(function () {
     $('body, .navbar, .section, .card-content').toggleClass('is-dark');
