@@ -194,7 +194,7 @@
                         <div class="field-body">
                             <div class="field">
                                 <p class="control has-icons-left">
-                                    <input class="input" id="dataDeNascimento" name="dataDeNascimento" type="date" required>
+                                    <input class="input" id="dataDeNascimento" name="dataDeNascimento" type="date" max="9999-12-31" required>
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-calendar"></i>
                                     </span>
