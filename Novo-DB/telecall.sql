@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 07/10/2023 às 02:33
+-- Tempo de geração: 09/10/2023 às 22:33
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -29,8 +29,17 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `autenticacao` (
   `id_autenticacao` int(11) NOT NULL,
-  `autenticacao` varchar(15) NOT NULL
+  `autenticacao` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Despejando dados para a tabela `autenticacao`
+--
+
+INSERT INTO `autenticacao` (`id_autenticacao`, `autenticacao`) VALUES
+(1, 'Nome da mãe'),
+(2, 'Cep'),
+(3, 'Data de nascimento');
 
 -- --------------------------------------------------------
 
@@ -58,6 +67,14 @@ CREATE TABLE `tipo_perfil` (
   `perfil` varchar(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Despejando dados para a tabela `tipo_perfil`
+--
+
+INSERT INTO `tipo_perfil` (`id_perfil`, `perfil`) VALUES
+(1, 'Master'),
+(2, 'Comum');
+
 -- --------------------------------------------------------
 
 --
@@ -79,6 +96,14 @@ CREATE TABLE `usuario` (
   `cep` char(8) NOT NULL,
   `fk_id_perfil` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Despejando dados para a tabela `usuario`
+--
+
+INSERT INTO `usuario` (`id_usuario`, `nome`, `nome_materno`, `data_nascimento`, `sexo`, `cpf`, `tel_celular`, `tel_fixo`, `endereco`, `login`, `senha`, `cep`, `fk_id_perfil`) VALUES
+(1, 'Davi Anderson de Oliveira', 'Neiva jane', '2002-05-01', 'Masculino', '12345678910', '21998166957', '2199816695', 'Galeão', 'brasil', 'alemanha', '12345678', 2),
+(2, 'O chefe de tudo master', 'Mãe do Master', '2023-12-31', 'Feminino', '12345678911', '5521998166957', '552199816695', 'TODO LUGAR', 'brasil', 'alemanha', '12345678', 1);
 
 --
 -- Índices para tabelas despejadas
@@ -120,7 +145,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `autenticacao`
 --
 ALTER TABLE `autenticacao`
-  MODIFY `id_autenticacao` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_autenticacao` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `log`
@@ -132,13 +157,13 @@ ALTER TABLE `log`
 -- AUTO_INCREMENT de tabela `tipo_perfil`
 --
 ALTER TABLE `tipo_perfil`
-  MODIFY `id_perfil` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_perfil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restrições para tabelas despejadas
