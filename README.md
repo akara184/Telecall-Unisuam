@@ -18,7 +18,7 @@ No segunda semestre estamos aplicando o back-end <---- ATUALMENTE
 
 
 
-![Screenshot_20231006_215354](https://github.com/akara184/Telecall-Unisuam/assets/108695793/d4d76674-f7f6-42b9-bd52-0d85ec8d3ae7)
+![Screenshot_20231009_174234](https://github.com/akara184/Telecall-Unisuam/assets/108695793/5150e25d-0cfd-4913-a6af-9c1b27ff8c77)
 
 
 
