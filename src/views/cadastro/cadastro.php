@@ -1,4 +1,3 @@
-<?include_once('../../controller/bd.php')?>
 
 <!DOCTYPE html>
 <html lang="pt-BR" class="has-navbar-fixed-top">
@@ -223,7 +222,7 @@
                     </div>
 
                     <div class="field">
-                        <label class="label">CPF:</label>
+                        <label class="label">Digite seu CPF:</label>
                         <div class="field-body">
                             <div class="field">
                                 <p class="control has-icons-left">
@@ -279,6 +278,21 @@
                                         placeholder="Digite seu endereço completo" required>
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-map-marker-alt"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Digite seu CEP:</label>
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control has-icons-left">
+                                    <input class="input" id="cep" name="cep" type="text"placeholder="Digite seu CEP" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <p class="help is-link">EX:00000-000</p>
                                     </span>
                                 </p>
                             </div>

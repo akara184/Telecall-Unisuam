@@ -1,7 +1,8 @@
 //NÚMEROS JÁ PRÉ DEFINIDO O FORMATO
 $(document).ready(function () {
   $("#cpf").mask("000.000.000-00");
-  $("#telefoneCelular").mask("(+55)00-000000000");
+  $("#cep").mask("00000-000");
+  $("#telefoneCelular").mask("(+55)00-000000000");  
   $("#telefoneFixo").mask("(+55)00-00000000");
 });
 
@@ -18,6 +19,7 @@ $("#cadastro").click(function () {
   var login = $("#login").val();
   var senha = $("#senha").val();
   var confirmeSenha = $("#confirmeSenha").val();
+  var cep = $("#cep").val();
 
   if (nome.length < 15 || nome.length > 60 || !nome.match(/^[a-zA-Z\s]+$/)) {
     $("#nome").focus();
@@ -116,7 +118,21 @@ $("#cadastro").click(function () {
       opacity: 1,
     });
     return;
-  } else if (!login.match(/^[a-zA-Z]{6}$/)) {
+  } 
+  else if (!cep.match(/^\d{5}-\d{3}$/)){
+    $("#cep").focus();
+    bulmaToast.toast({
+      message: "O campo de CEP é preciso ser do formato 00000-000.",
+      type: "is-link",
+      position: "center",
+      pauseOnHover: true,
+      dismissible: true,
+      closeOnClick: true,
+      opacity: 1,
+    });
+    return;
+  }
+  else if (!login.match(/^[a-zA-Z]{6}$/)) {
     $("#login").focus();
     bulmaToast.toast({
       message: "O campo Login deve ter exatamente 6 caracteres alfabéticos.",
