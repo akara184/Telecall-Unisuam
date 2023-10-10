@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR" class="has-navbar-fixed-top">
 <!--A framwork BULMA na documentação sugere essa classe na tag HTML. -->
@@ -150,7 +149,7 @@
 
     <!--INICIO DO MEU CADASTRO-->
 
-    <form action="../../views/login/login.php" method="post">
+    <form action="../../controller/cadastroController.php" method="POST">
         <section class="hero is-fullheight ">
             <div class="hero-body is-justify-content-center">
                 <div class="columns is-flex is-flex-direction-column box">
@@ -353,7 +352,7 @@
                     </div>
                     <div class="field is-grouped">
                         <div class="column">
-                            <button class="button is-fullwidth is-medium" name="cadastro" id="cadastro" type="button"
+                            <button class="button is-fullwidth is-medium" name="cadastro" id="cadastro" type="submit"
                                 value="Submit input">Cadastre-se</button>
                         </div>
                         <div class="column">
